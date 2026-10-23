@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>청년 NEXT STEP 프로젝트 참여자 모집</title>
+<meta name="description" content="군 전역·휴학·복학 청년 15명 모집. 성향·강점 분석, 전문가 1:1 강점 코칭, 30일 실천 설계를 무료로 지원해요. 11. 7.(토) 마감.">
+<meta property="og:title" content="청년 NEXT STEP 프로젝트 참여자 모집">
+<meta property="og:description" content="군 전역·휴학·복학 청년 15명 모집. 성향·강점 분석, 전문가 1:1 강점 코칭, 30일 실천 설계를 무료로 지원해요. 11. 7.(토) 마감.">
+<style>html,body{margin:0;background:#F2F3F7}</style>
+
+</head>
+<body>
+<!-- ▼▼▼ 홈페이지 빌더의 'HTML 코드' 블록에 넣을 때는 여기부터 복사 ▼▼▼ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+/* Layout: LOGIN lab 부트캠프 상세 페이지 형식 — 연회색 바탕 위 둥근 흰 카드, 노란 히어로 카드 + 오른쪽 요약 카드, 탭 바, 2열 카드 행. 신청은 3단계 카드형. 스타일은 .ns 안에서만 적용. */
+.ns{
+  --page:#F2F3F7; --card:#FFFFFF; --tile:#F5F6F8; --ink:#111214; --sub:#5C616B; --faint:#9A9FA9; --line:#E6E8ED; --field:#D9DCE2;
+  --yellow:#F3EC4A; --yellow-btn:#F8F25A; --yellow-deep:#D9D02C; --yellow-soft:#FCFBDD; --yellow-pale:#FEFEF3;
+  --black:#121315; --err:#E5484D;
+  --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+  font-family:var(--font); color:var(--ink); background:var(--page);
+  font-size:15.5px; line-height:1.6; letter-spacing:-.02em; word-break:keep-all;
+  -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;
+}
+.ns *,.ns *::before,.ns *::after{box-sizing:border-box}
+.ns [hidden]{display:none!important}
+.ns :where(h1,h2,h3,p,ul,ol,dl,dd,fieldset,legend){margin:0;padding:0}
+.ns :where(ul,ol){list-style:none}
+.ns button,.ns input,.ns textarea,.ns select{font:inherit;color:inherit;letter-spacing:inherit}
+.ns a{color:inherit}
+.ns :focus-visible{outline:3px solid var(--ink);outline-offset:2px;border-radius:8px}
+.ns .wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-top:20px;padding-bottom:40px}
+.ns .back{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;color:var(--sub);text-decoration:none;margin-bottom:14px}
+.ns .back:hover{color:var(--ink)}
+
+/* 공통 카드·버튼 */
+.ns .card{background:var(--card);border-radius:24px;padding:26px 22px}
+.ns .card.soft{background:linear-gradient(160deg,var(--yellow-soft) 0%,var(--yellow-pale) 100%)}
+.ns .card.dark{background:var(--black);color:#fff;position:relative;overflow:hidden}
+.ns .card h2{font-size:19px;font-weight:800;letter-spacing:-.03em}
+.ns .card .cap{font-size:14px;color:var(--faint);margin-top:4px}
+.ns .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 26px;border:0;border-radius:999px;
+  background:var(--black);color:#fff;font-weight:700;font-size:16.5px;text-decoration:none;cursor:pointer;transition:transform .12s,background .12s}
+.ns .btn:hover{background:#2A2C30}
+.ns .btn:active{transform:scale(.99)}
+.ns .btn.full{width:100%}
+.ns .btn.ghost{background:transparent;color:var(--sub);min-height:48px;padding:0 14px}
+.ns .btn.ghost:hover{color:var(--ink);background:var(--tile)}
+.ns .btn[disabled]{opacity:.55;cursor:progress}
+.ns .btn[aria-disabled="true"]{background:#E4E6EB;color:var(--faint);pointer-events:none}
+.ns .pill{display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.ns .pill.dark{background:var(--black);color:#fff}
+.ns .pill.gray{background:var(--tile);color:var(--sub)}
+.ns .pill.yel{background:var(--yellow-btn);color:var(--ink)}
+.ns .pill.off{background:#E9EBEF;color:var(--faint)}
+.ns .tag{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.ns .ico{width:36px;height:36px;border-radius:10px;background:var(--yellow-btn);display:grid;place-items:center;flex:none;color:var(--ink)}
+.ns .ico svg{width:19px;height:19px}
+
+/* ── 상단: 히어로 + 요약 ── */
+.ns .top{display:grid;gap:14px}
+.ns .hero{position:relative;overflow:hidden;background:var(--yellow);border-radius:24px;padding:22px 22px 26px;min-height:300px;display:flex;flex-direction:column}
+.ns .hero .row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.ns .hero .title{margin-top:auto;position:relative;z-index:1}
+.ns .hero .big{font-size:clamp(52px,15vw,96px);font-weight:900;line-height:.92;letter-spacing:-.055em}
+.ns .hero .ko{margin-top:12px;font-size:15px;font-weight:700}
+.ns .spark{position:absolute;color:var(--yellow-deep)}
+.ns .spark path{fill:currentColor}
+.ns .info .chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.ns .info .hash{font-size:12px;color:var(--faint);font-weight:600}
+.ns .info h1{margin-top:14px;font-size:clamp(24px,6vw,28px);font-weight:800;line-height:1.3;letter-spacing:-.035em}
+.ns .info .desc{margin-top:6px;font-size:14.5px;color:var(--faint)}
+.ns .info dl{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);display:grid;gap:9px}
+.ns .info dl div{display:grid;grid-template-columns:64px 1fr;gap:12px;font-size:14.5px}
+.ns .info dt{color:var(--faint);font-weight:500}
+.ns .info dd{font-weight:600;min-width:0}
+.ns .tr-h{margin-top:20px;font-size:13.5px;font-weight:800}
+.ns .tr-list{margin-top:8px;display:grid;gap:6px}
+.ns .tr-list li{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;background:var(--tile);border-radius:12px;padding:10px 14px;font-size:14px}
+.ns .tr-list b{font-weight:700}
+.ns .tr-list span.w{color:var(--sub);font-size:13.5px}
+.ns .info .cta{margin-top:18px;display:grid;gap:10px;justify-items:center}
+.ns .info .cta small{font-size:13px;color:var(--sub)}
+.ns .info .cta small b{color:var(--ink)}
+
+/* 탭 바 */
+.ns .tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;margin-top:14px;background:var(--card);border-radius:18px;padding:0 10px;
+  display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;box-shadow:0 1px 0 var(--line)}
+.ns .tabs::-webkit-scrollbar{display:none}
+.ns .tabs a{flex:none;padding:15px 10px 13px;font-size:14.5px;font-weight:600;color:var(--faint);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+.ns .tabs a:hover{color:var(--ink)}
+.ns .tabs a.on{color:var(--ink);border-bottom-color:var(--ink)}
+
+/* 섹션 그리드 */
+.ns .rows{display:grid;gap:14px;margin-top:14px}
+.ns .two{display:grid;gap:14px}
+.ns section[id]{scroll-margin-top:70px}
+.ns .checks{margin-top:16px;display:grid;gap:12px}
+.ns .checks li{display:grid;grid-template-columns:20px 1fr;gap:10px;font-size:15px;align-items:start}
+.ns .checks svg{margin-top:2px}
+.ns .nums{margin-top:16px;display:grid;gap:12px}
+.ns .nums li{display:grid;grid-template-columns:26px 1fr;gap:10px;font-size:15px;align-items:start}
+.ns .nums .n{width:26px;height:26px;border-radius:50%;background:var(--yellow-btn);display:grid;place-items:center;font-size:12.5px;font-weight:800}
+.ns .nums b{font-weight:700}
+.ns .nums small{display:block;font-size:13.5px;color:var(--faint)}
+.ns .tiles{margin-top:18px;display:grid;gap:10px}
+.ns .tile{background:var(--tile);border-radius:16px;padding:18px;display:grid;gap:10px;align-content:start}
+.ns .tile h3{font-size:16px;font-weight:800}
+.ns .tile p{font-size:14px;color:var(--sub)}
+.ns .tile .step{font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--faint)}
+
+.ns .tracks{margin-top:18px;display:grid;gap:10px}
+.ns .track{position:relative;background:var(--tile);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.ns .track .bg-no{position:absolute;right:16px;top:10px;font-size:40px;font-weight:900;letter-spacing:-.04em;color:#E3E5EA;line-height:1}
+.ns .track .hd{display:flex;gap:6px;align-items:center}
+.ns .track h3{font-size:18px;font-weight:800}
+.ns .track .who{font-size:14px;color:var(--sub);margin-top:-6px}
+.ns .track dl{display:grid;gap:8px;background:var(--card);border-radius:12px;padding:12px 14px}
+.ns .track dt{font-size:12px;font-weight:700;color:var(--faint)}
+.ns .track dd{font-size:14.5px;font-weight:500}
+.ns .track .go{margin-top:auto;font-size:14px;font-weight:700;text-decoration:none;align-self:flex-start;padding:7px 14px;border-radius:999px;background:var(--card)}
+.ns .track .go:hover{background:var(--yellow-btn)}
+.ns .remark{margin-top:12px;font-size:13.5px;color:var(--faint)}
+
+.ns .sched{margin-top:16px;display:grid;gap:12px}
+.ns .sched li{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center}
+.ns .sched .d{width:44px;height:44px;border-radius:50%;background:var(--yellow-btn);display:grid;place-items:center;font-size:12.5px;font-weight:800}
+.ns .sched li.past .d{background:var(--tile);color:var(--faint)}
+.ns .sched b{display:block;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums}
+.ns .sched span{font-size:13.5px;color:var(--faint)}
+.ns .card.dark h2{color:#fff}
+.ns .stars{margin-top:16px;display:grid;gap:12px;position:relative;z-index:1}
+.ns .stars li{display:grid;grid-template-columns:18px 1fr;gap:10px;font-size:15px;color:#E9EAEE;align-items:start}
+.ns .stars svg{margin-top:3px}
+.ns .card.dark .spark{color:#2A2B2F}
+
+.ns .proc{margin-top:16px;display:grid;gap:16px}
+.ns .proc li{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start}
+.ns .proc .n{width:32px;height:32px;border-radius:50%;background:var(--black);color:#fff;display:grid;place-items:center;font-size:13.5px;font-weight:800}
+.ns .proc li:last-child .n{background:var(--yellow-btn);color:var(--ink)}
+.ns .proc b{display:block;font-size:15px;font-weight:800;padding-top:4px}
+.ns .proc span{font-size:13.5px;color:var(--faint)}
+.ns .support{margin-top:16px;display:grid;gap:8px}
+.ns .support li{background:rgba(255,255,255,.75);border-radius:14px;padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start}
+.ns .support .ico{width:30px;height:30px;border-radius:8px}
+.ns .support .ico svg{width:16px;height:16px}
+.ns .support b{display:block;font-size:15px;font-weight:800}
+.ns .support span{font-size:13.5px;color:var(--sub)}
+
+.ns .faq{margin-top:12px;display:grid}
+.ns .faq details{border-bottom:1px solid var(--line)}
+.ns .faq details:last-child{border-bottom:0}
+.ns .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;padding:16px 2px;font-weight:700;font-size:15.5px}
+.ns .faq summary::-webkit-details-marker{display:none}
+.ns .faq summary::after{content:"+";font-weight:500;font-size:20px;line-height:1;color:var(--faint)}
+.ns .faq details[open] summary::after{content:"–"}
+.ns .faq p{padding:0 2px 16px;color:var(--sub);font-size:14.5px}
+
+.ns .note{margin-top:22px;font-size:12.5px;color:var(--faint);text-align:center;display:grid;gap:4px}
+.ns .note .mail{color:var(--sub);user-select:all}
+
+.ns .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);
+  padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+  transform:translateY(110%);transition:transform .25s ease;display:flex;align-items:center;gap:12px}
+.ns .sticky.on{transform:none}
+.ns .sticky .when{font-size:12.5px;color:var(--faint);line-height:1.35;white-space:nowrap}
+.ns .sticky .when b{display:block;color:var(--ink);font-size:14.5px}
+.ns .sticky .btn{flex:1;min-height:50px}
+.ns #ns-landing .wrap{padding-bottom:110px}
+
+/* ── 신청: 단계형 카드 ── */
+.ns .apply-card{max-width:640px;margin:0 auto;background:var(--card);border-radius:28px;padding:28px 20px 24px}
+.ns .ap-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.ns .ap-top .tag{color:var(--sub)}
+.ns .stepper{display:flex;align-items:center;gap:8px}
+.ns .stepper i{font-style:normal;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;color:var(--faint);
+  border:1.5px solid var(--line);background:var(--card);transition:background .15s,border-color .15s,color .15s}
+.ns .stepper i.on{background:var(--yellow-btn);border-color:var(--yellow-btn);color:var(--ink)}
+.ns .stepper i.ok{background:var(--black);border-color:var(--black);color:#fff}
+.ns .stepper span{width:22px;height:1.5px;background:var(--line)}
+.ns .ap-title{margin-top:26px;font-size:clamp(22px,6vw,26px);font-weight:800;line-height:1.38;letter-spacing:-.035em}
+.ns .ap-sub{margin-top:6px;font-size:14px;color:var(--faint)}
+.ns .pane{margin-top:24px;display:grid;gap:26px}
+.ns .q{display:grid;gap:10px;border:0;min-width:0}
+.ns .q legend,.ns .q>.lab{font-weight:700;font-size:15.5px;padding:0;margin-bottom:10px;line-height:1.5}
+.ns .q>.lab{margin-bottom:0}
+.ns .req{font-style:normal;color:var(--err);margin-left:2px}
+.ns .opt{font-weight:500;font-size:13px;color:var(--faint);margin-left:4px}
+.ns .hint{font-size:13.5px;color:var(--faint);margin-top:-4px}
+.ns .hint b{color:var(--ink)}
+.ns .guide{display:grid;gap:4px;background:var(--tile);border-radius:12px;padding:12px 14px;font-size:13.5px;color:var(--sub)}
+.ns .guide li{position:relative;padding-left:12px}
+.ns .guide li::before{content:"";position:absolute;left:0;top:.72em;width:4px;height:4px;border-radius:50%;background:var(--faint)}
+.ns textarea.field.tall{min-height:190px}
+.ns .count{margin-top:-4px;font-size:12.5px;color:var(--faint);text-align:right;font-variant-numeric:tabular-nums}
+.ns .count.ok{color:var(--ink);font-weight:700}
+.ns .tpick{display:grid;gap:8px}
+.ns .tcard{position:relative;display:grid;grid-template-columns:1fr 24px;gap:12px;align-items:center;border:1.5px solid var(--line);
+  border-radius:16px;padding:15px 16px;background:var(--card);cursor:pointer;transition:border-color .12s,background .12s}
+.ns .tcard input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.ns .tcard b{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:800}
+.ns .tcard .s{display:block;font-size:13.5px;color:var(--sub);margin-top:2px}
+.ns .tcard .mk{width:24px;height:24px;border-radius:50%;border:1.5px solid var(--field);display:grid;place-items:center}
+.ns .tcard.on{border-color:#E4DC3C;background:var(--yellow-pale);box-shadow:inset 0 0 0 1px #E4DC3C}
+.ns .tcard.on .mk{background:var(--yellow-btn);border-color:var(--yellow-btn)}
+.ns .tcard.on .mk::after{content:"";width:11px;height:6px;border-left:2.2px solid var(--ink);border-bottom:2.2px solid var(--ink);transform:translateY(-1px) rotate(-45deg)}
+.ns .tcard:focus-within{outline:3px solid var(--ink);outline-offset:2px}
+.ns .chips2{display:flex;flex-wrap:wrap;gap:8px}
+.ns .chip{position:relative}
+.ns .chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.ns .chip span{display:inline-flex;align-items:center;min-height:42px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line);
+  background:var(--card);font-size:14.5px;font-weight:600;transition:background .12s,border-color .12s}
+.ns .chip input:checked+span{background:var(--yellow-btn);border-color:var(--yellow-btn);font-weight:800}
+.ns .chip input:focus-visible+span{outline:3px solid var(--ink);outline-offset:2px}
+.ns .field{width:100%;min-height:52px;border:1.5px solid var(--line);border-radius:14px;background:var(--tile);padding:13px 16px;font-size:16px;
+  transition:border-color .12s,background .12s}
+.ns .field::placeholder{color:#A9AEB7}
+.ns .field:focus{outline:0;border-color:var(--ink);background:var(--card)}
+.ns textarea.field{min-height:124px;resize:vertical;line-height:1.6}
+.ns select.field{appearance:none;-webkit-appearance:none;padding-right:40px;
+  background-image:linear-gradient(45deg,transparent 50%,var(--sub) 50%),linear-gradient(135deg,var(--sub) 50%,transparent 50%);
+  background-position:calc(100% - 20px) 23px,calc(100% - 15px) 23px;background-size:5px 5px;background-repeat:no-repeat}
+.ns .err{display:none;font-size:13.5px;font-weight:600;color:var(--err)}
+.ns .bad .err{display:block}
+.ns .bad .field,.ns .bad .chip span,.ns .bad .tcard{border-color:var(--err)}
+.ns .grid2{display:grid;gap:22px}
+.ns .ck{appearance:none;-webkit-appearance:none;width:22px;height:22px;margin:0;flex:none;border-radius:6px;border:1.5px solid var(--field);background:var(--card);
+  display:grid;place-items:center;cursor:pointer;transition:background .12s,border-color .12s}
+.ns .ck:checked{background:var(--yellow-btn);border-color:var(--yellow-btn)}
+.ns .ck:checked::after{content:"";width:10px;height:5px;border-left:2.2px solid var(--ink);border-bottom:2.2px solid var(--ink);transform:translateY(-1px) rotate(-45deg)}
+.ns .ck:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.ns .agree-all{display:flex;align-items:center;gap:12px;background:var(--yellow-soft);border:1px solid #F1EDB0;border-radius:14px;padding:15px 16px;font-weight:800;font-size:15.5px;cursor:pointer}
+.ns .agree{display:grid;gap:4px}
+.ns .agree-row{display:flex;align-items:center;gap:12px;padding:10px 2px;font-size:14.5px}
+.ns .agree-row label{display:flex;align-items:center;gap:12px;flex:1;cursor:pointer}
+.ns .agree-row .em{color:var(--sub)}
+.ns .see{border:0;background:none;padding:4px 2px;font-size:13px;color:var(--faint);text-decoration:underline;cursor:pointer;white-space:nowrap}
+.ns .see:hover{color:var(--ink)}
+.ns .terms{background:var(--tile);border-radius:12px;padding:12px 14px;margin:0 0 6px 34px;display:grid;grid-template-columns:64px 1fr;gap:5px 10px;font-size:13px;color:var(--sub)}
+.ns .terms dt{font-weight:700;color:var(--ink)}
+.ns .terms dd{min-width:0}
+.ns .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.ns .nav{margin-top:30px;display:flex;gap:8px;align-items:center}
+.ns .nav .btn:not(.ghost){flex:1}
+.ns .status{margin-top:12px;font-size:14px;font-weight:600;color:var(--err);text-align:center}
+.ns .status:empty{display:none}
+.ns .done{position:relative;overflow:hidden;text-align:center;display:grid;gap:12px;justify-items:center;padding:20px 0 4px}
+.ns .done .burst{width:88px;height:88px;border-radius:50%;background:var(--yellow-btn);display:grid;place-items:center;margin-top:8px}
+.ns .done h1{font-size:26px;font-weight:800;letter-spacing:-.035em;margin-top:6px}
+.ns .done p{color:var(--sub);font-size:15px}
+.ns .done dl{width:100%;max-width:360px;margin-top:8px;background:var(--tile);border-radius:16px;padding:6px 16px;text-align:left}
+.ns .done dl div{display:grid;grid-template-columns:72px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.ns .done dl div:last-child{border-bottom:0}
+.ns .done dt{color:var(--faint)}
+.ns .done dd{font-weight:600}
+.ns .done .btn{margin-top:10px}
+.ns .confetti{position:absolute;inset:0;pointer-events:none}
+.ns .confetti i{position:absolute;width:8px;height:8px;border-radius:2px;opacity:.9}
+
+@media (min-width:860px){
+  .ns .wrap{padding-top:28px}
+  .ns .top{grid-template-columns:1.32fr 1fr;align-items:stretch}
+  .ns .hero{padding:28px 30px 32px;min-height:430px}
+  .ns .card{padding:30px 30px}
+  .ns .two{grid-template-columns:1.32fr 1fr}
+  .ns .two.even{grid-template-columns:1fr 1fr}
+  .ns .tiles{grid-template-columns:repeat(3,1fr)}
+  .ns .tracks{grid-template-columns:repeat(3,1fr)}
+  .ns .tabs{padding:0 20px;gap:14px}
+  .ns .sticky{display:none}
+  .ns #ns-landing .wrap{padding-bottom:48px}
+  .ns .apply-card{padding:36px 40px 32px}
+  .ns .grid2{grid-template-columns:1fr 1fr;column-gap:14px}
+  .ns .grid2 .full{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){ .ns *{transition:none!important;scroll-behavior:auto!important} }
+.ns .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* 모집 일정 흐름 */
+.ns .flow{margin-top:22px;display:grid;grid-template-columns:1fr auto 1fr;align-items:start;row-gap:22px;column-gap:6px}
+.ns .flow .fa-mid{display:none}
+.ns .fs{display:grid;justify-items:center;text-align:center;gap:4px;padding:0 2px}
+.ns .fc{width:min(112px,30vw);aspect-ratio:1;border-radius:50%;background:var(--tile);display:grid;place-items:center;color:var(--ink);margin-bottom:8px}
+.ns .fc svg{width:38%;height:38%}
+.ns .fs.now .fc{background:var(--yellow-btn)}
+.ns .fs b{font-size:15.5px;font-weight:800;line-height:1.35}
+.ns .fd{font-size:13.5px;color:var(--sub);font-variant-numeric:tabular-nums}
+.ns .fs.now .fd{color:var(--ink);font-weight:700}
+.ns .fa{align-self:start;display:grid;place-items:center;height:min(112px,30vw)}
+.ns .flow-note{margin-top:22px;background:var(--tile);border-radius:14px;padding:13px 16px;font-size:14px;color:var(--sub)}
+.ns .flow-note b{color:var(--ink);margin-right:8px}
+.ns .flow-note span{color:var(--faint)}
+@media (min-width:860px){
+  .ns .flow{grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;column-gap:10px;max-width:820px;margin-left:auto;margin-right:auto}
+  .ns .flow .fa-mid{display:grid}
+  .ns .fc{width:128px}
+  .ns .fa{height:128px}
+}
+
+/* 프로그램 취지 */
+.ns .purpose{display:grid;gap:22px}
+.ns .purpose .tag{color:var(--faint)}
+.ns .purpose h2{margin-top:10px;font-size:clamp(21px,5.4vw,25px);line-height:1.4;letter-spacing:-.035em}
+.ns .purpose .lead{margin-top:14px;font-size:15px;color:var(--sub)}
+.ns .purpose .lead b{color:var(--ink);font-weight:700}
+.ns .purpose .pnote{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:13.5px;color:var(--faint)}
+.ns .aims{display:grid;gap:8px;align-content:center}
+.ns .aims li{background:var(--tile);border-radius:16px;padding:15px 16px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center}
+.ns .aims .n{min-width:38px;height:28px;border-radius:999px;background:var(--yellow-btn);display:grid;place-items:center;font-size:12.5px;font-weight:900}
+.ns .aims b{display:block;font-size:15.5px;font-weight:800}
+.ns .aims div span{font-size:13.5px;color:var(--sub)}
+@media (min-width:860px){
+  .ns .purpose{grid-template-columns:1.32fr 1fr;column-gap:40px;align-items:center}
+}
+
+/* 한 페이지 신청 화면 */
+.ns .ap-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:640px;margin:0 auto 14px}
+.ns .ap-bar .back{margin:0}
+.ns .addr{display:grid;grid-template-columns:.85fr 1.15fr;gap:8px}
+.ns textarea.field.short{min-height:88px}
+.ns span.lab{display:block}
+</style>
+
+<div class="ns" id="ns-root">
+  <div id="ns-landing" class="view">
+  <div class="wrap">
+    <a class="back" href="/program" id="ns-list">← 프로그램 목록</a>
+
+    <div class="top">
+      <div class="hero">
+        <div class="row">
+          <span class="tag">LOGIN PROJECT · 3 TRACKS</span>
+          <span class="pill dark" id="ns-dday">모집중</span>
+        </div>
+        <svg class="spark" style="right:8%;bottom:22%;width:84px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
+        <svg class="spark" style="right:3%;bottom:44%;width:30px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
+        <svg class="spark" style="right:22%;bottom:9%;width:22px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
+        <div class="title">
+          <p class="big">NEXT<br>STEP</p>
+          <p class="ko">청년 생애전환기 자기이해·강점 성장 프로젝트</p>
+        </div>
+      </div>
+
+      <aside class="card info">
+        <div class="chips"><span class="pill gray">시범사업</span><span class="pill yel">참가비 무료</span><span class="hash">#군전역 #휴학생 #복학생</span></div>
+        <h1>청년 NEXT STEP 프로젝트</h1>
+        <p class="desc">나를 이해하고, 나만의 다음 단계를 준비해요.</p>
+        <dl>
+          <div><dt>모집 기간</dt><dd>~ 2026. 11. 7.(토) 23:59</dd></div>
+          <div><dt>진행 구성</dt><dd>성향 분석 · 1:1 코칭 · 30일 실천</dd></div>
+          <div><dt>정원</dt><dd>총 15명 (전형별 5명)</dd></div>
+          <div><dt>대상</dt><dd>군 전역 · 휴학 · 복학 중인 청년</dd></div>
+          <div><dt>참가비</dt><dd>무료 (시범사업)</dd></div>
+        </dl>
+        <p class="tr-h">모집 전형</p>
+        <ul class="tr-list">
+          <li><b>군 전역</b><span class="w">전역 후 1년 이내</span><span class="pill yel tstat">5명 모집</span></li>
+          <li><b>휴학생</b><span class="w">현재 대학 휴학 중</span><span class="pill yel tstat">5명 모집</span></li>
+          <li><b>복학생</b><span class="w">복학 후 첫 학기</span><span class="pill yel tstat">5명 모집</span></li>
+        </ul>
+        <div class="cta">
+          <a class="btn full" href="#apply" data-apply id="ns-hero-cta">참가 신청하기 →</a>
+          <small id="ns-dday2"><b>11. 7.(토) 23:59</b> 마감</small>
+        </div>
+      </aside>
+    </div>
+
+    <nav class="tabs" aria-label="프로그램 안내">
+      <a href="#about" class="on">프로그램 소개</a>
+      <a href="#tracks">모집 전형</a>
+      <a href="#schedule">모집 일정</a>
+      <a href="#support">지원 내용</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="rows">
+      <section id="about" class="card purpose">
+        <div>
+          <p class="tag">WHY NEXT STEP</p>
+          <h2>잠시 멈춘 시간도,<br>다음 단계를 준비하는 시간이 될 수 있어요.</h2>
+          <p class="lead">군 전역, 휴학, 복학은 생활의 리듬과 소속이 한꺼번에 바뀌는 시기예요. 이때 많은 청년이 ‘이제 뭘 해야 하지?’부터 고민하지만, 정작 <b>‘나는 어떤 사람이고, 무엇을 잘하지?’</b>를 차분히 들여다볼 기회는 많지 않아요.</p>
+          <p class="lead">NEXT STEP은 생애전환기에 선 청년이 <b>내 성향과 강점을 먼저 이해하고</b>, 그 강점을 살린 작은 실천으로 <b>다음 단계를 스스로 설계하도록</b> 돕는 프로젝트예요.</p>
+          <p class="pnote">이번 시범사업에서는 15명과 함께해요. 참여자들의 이야기는 앞으로 청년 유형별 성장 지원 프로그램을 다듬는 데 쓰여요.</p>
+        </div>
+        <ul class="aims">
+          <li><span class="n">01</span><div><b>나를 이해하기</b><span>성향 분석으로 나를 한 걸음 떨어져서 바라봐요.</span></div></li>
+          <li><span class="n">02</span><div><b>강점 발견하기</b><span>지난 경험 속에 숨어 있던 나만의 강점을 찾아요.</span></div></li>
+          <li><span class="n">03</span><div><b>작게 실천하기</b><span>30일 동안 직접 해 보며 다음 단계를 만들어 가요.</span></div></li>
+        </ul>
+      </section>
+
+      <section class="two">
+        <div class="card soft">
+          <h2>이런 분을 위한 프로그램이에요</h2>
+          <ul class="checks">
+            <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>전역은 했는데, 무엇부터 시작해야 할지 막막한 분</li>
+            <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>휴학 기간을 의미 있게 보내고 싶은 분</li>
+            <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>복학 후 달라진 학교생활에 다시 자리 잡고 싶은 분</li>
+            <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>뭘 할지 정하기 전에, 내가 뭘 잘하는지부터 알고 싶은 분</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>참여하면 이런 게 남아요</h2>
+          <ol class="nums">
+            <li><span class="n">1</span><span><b>성향·강점 분석 리포트</b><small>에니어그램 기반 성향 탐색 + AI 활용 리포트</small></span></li>
+            <li><span class="n">2</span><span><b>나의 강점·성장 과제 요약</b><small>전문가 1:1 코칭으로 정리</small></span></li>
+            <li><span class="n">3</span><span><b>나만의 30일 실천 계획서</b><small>강점을 살린 실천 행동과 30일 뒤 점검</small></span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>NEXT STEP은 이렇게 진행돼요</h2>
+        <p class="cap">과정은 모두 같고, 코칭 주제만 내 상황에 맞춰 달라져요.</p>
+        <div class="tiles">
+          <div class="tile">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.6-4.6M8 12v-1.5M10.5 12V8.5M13 12v-2.5"/></svg></span>
+            <p class="step">STEP 1</p><h3>성향·강점 분석</h3>
+            <p>사전 설문과 에니어그램 기반 성향 탐색 후, AI가 정리한 나만의 자기이해 리포트를 받아요.</p>
+          </div>
+          <div class="tile">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-5 4V5z"/><path d="M8.5 10h.01M12 10h.01M15.5 10h.01"/></svg></span>
+            <p class="step">STEP 2</p><h3>전문가 1:1 강점 코칭</h3>
+            <p>리포트를 함께 해석하고, 지난 경험 속 강점과 지금의 고민을 정리해요.</p>
+          </div>
+          <div class="tile">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16M9 15l2 2 4-4"/></svg></span>
+            <p class="step">STEP 3</p><h3>30일 실천 설계</h3>
+            <p>강점을 살린 실천 행동을 정해 30일 계획을 세우고, 30일 뒤 달라진 점을 점검해요.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tracks" class="card">
+        <h2>모집 전형</h2>
+        <p class="cap">세 가지 전형에서 5명씩, 모두 15명을 선발해요.</p>
+        <div class="tracks">
+          <article class="track">
+            <span class="bg-no" aria-hidden="true">01</span>
+            <div class="hd"><span class="pill dark">TRACK 1</span><span class="pill yel">5명</span></div>
+            <h3>군 전역 전형</h3><p class="who">전역(소집해제) 후 1년 이내</p>
+            <dl><div><dt>탐색 질문</dt><dd>군 생활에서 나는 어떤 역할을 해왔을까?</dd></div><div><dt>코칭 초점</dt><dd>군 경험 속 강점과 사회생활에서의 활용</dd></div></dl>
+            <a class="go" href="#apply" data-apply="discharge">이 전형으로 신청 →</a>
+          </article>
+          <article class="track">
+            <span class="bg-no" aria-hidden="true">02</span>
+            <div class="hd"><span class="pill dark">TRACK 2</span><span class="pill yel">5명</span></div>
+            <h3>휴학생 전형</h3><p class="who">현재 대학을 휴학 중</p>
+            <dl><div><dt>탐색 질문</dt><dd>휴학 기간, 나는 무엇을 원하고 있을까?</dd></div><div><dt>코칭 초점</dt><dd>관심사·성향·강점 정리와 작은 도전</dd></div></dl>
+            <a class="go" href="#apply" data-apply="leave">이 전형으로 신청 →</a>
+          </article>
+          <article class="track">
+            <span class="bg-no" aria-hidden="true">03</span>
+            <div class="hd"><span class="pill dark">TRACK 3</span><span class="pill yel">5명</span></div>
+            <h3>복학생 전형</h3><p class="who">복학 후 첫 학기를 보내는 중</p>
+            <dl><div><dt>탐색 질문</dt><dd>복학하고 나서 무엇이 달라졌을까?</dd></div><div><dt>코칭 초점</dt><dd>새 생활환경에서의 강점 활용과 습관</dd></div></dl>
+            <a class="go" href="#apply" data-apply="return">이 전형으로 신청 →</a>
+          </article>
+        </div>
+        <p class="remark">여러 전형에 해당하면, 지금 가장 고민이 큰 상황 하나로 신청해 주세요.</p>
+      </section>
+
+      <section id="schedule" class="card">
+        <h2>모집 일정</h2>
+        <p class="cap">접수부터 최종 선발까지 이렇게 진행돼요.</p>
+        <ol class="flow">
+          <li class="fs now"><span class="fc"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="6" width="16" height="21" rx="2.5"/><path d="M12 4h6v4h-6z"/><path d="M11 14h8M11 18h5"/><path d="M27 15l-7 7-2.5.6.6-2.5 7-7z"/></svg></span><b>온라인 접수</b><span class="fd" id="ns-flow-d">~ 11. 7.(토)</span></li>
+          <li class="fa" aria-hidden="true"><svg width="14" height="22" viewBox="0 0 14 22"><path d="M3 3l8 8-8 8" fill="none" stroke="#121315" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+          <li class="fs"><span class="fc"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="6" width="22" height="15" rx="2.5"/><path d="M12 26h8M16 21v5"/><path d="M14.5 10.5l5.5 3-2.6.7-.9 2.5z"/></svg></span><b>서류 심사</b><span class="fd">접수 마감 후</span></li>
+          <li class="fa fa-mid" aria-hidden="true"><svg width="14" height="22" viewBox="0 0 14 22"><path d="M3 3l8 8-8 8" fill="none" stroke="#121315" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+          <li class="fs"><span class="fc"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="12" r="7"/><circle cx="16" cy="12" r="3"/><path d="M11.5 17.5L9 28l4-2 3 3M20.5 17.5L23 28l-4-2-3 3"/></svg></span><b>최종 선발</b><span class="fd">개별 문자 안내</span></li>
+          <li class="fa" aria-hidden="true"><svg width="14" height="22" viewBox="0 0 14 22"><path d="M3 3l8 8-8 8" fill="none" stroke="#121315" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+          <li class="fs"><span class="fc"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28V5"/><path d="M8 6h16l-3.5 5L24 16H8"/></svg></span><b>프로그램 진행</b><span class="fd">선발 후 시작</span></li>
+        </ol>
+        <p class="flow-note"><b>서류 심사 기준</b> 전형 자격 · 고민 내용 · 참여 동기 · 일정 참여 가능 여부 · 참여자 구성 <span>(선착순 아님)</span></p>
+      </section>
+
+      <section id="support" class="two even">
+        <div class="card soft">
+          <h2>참가자 지원 내용</h2>
+          <ul class="support">
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg></span><div><b>참가비 무료</b><span>시범사업으로 운영돼 참가비가 없어요.</span></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></span><div><b>개인 분석 리포트</b><span>에니어그램 기반 성향 탐색과 AI 활용 자기이해 리포트를 드려요.</span></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-5 4V5z"/></svg></span><div><b>1:1 전문가 코칭</b><span>리포트를 바탕으로 강점과 성장 과제를 함께 정리해요.</span></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span><div><b>30일 실천 점검</b><span>계획을 실천해 보고, 30일 뒤 달라진 점을 함께 살펴봐요.</span></div></li>
+          </ul>
+        </div>
+        <div class="card dark">
+          <svg class="spark" style="right:-18px;bottom:-18px;width:150px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
+          <h2>이런 질문을 함께 다뤄요</h2>
+          <ul class="stars">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>나는 어떤 상황에서 강점을 발휘할까?</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>군 생활에서 나는 어떤 역할을 해왔을까?</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>휴학 기간, 나는 무엇을 원하고 있을까?</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>복학 후, 무엇이 달라졌을까?</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>앞으로 30일, 무엇부터 해 볼까?</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="faq" class="card">
+        <h2>자주 묻는 질문</h2>
+        <div class="faq">
+          <details><summary>선착순으로 뽑나요?</summary><p>아니요. 마감까지 받은 신청서를 모두 검토해서 전형별로 5명씩 선발해요.</p></details>
+          <details><summary>여러 전형에 해당하면 어떻게 하나요?</summary><p>지금 가장 고민이 큰 상황 하나를 골라 그 전형으로 신청해 주세요.</p></details>
+          <details><summary>정말 무료인가요?</summary><p>네, 시범사업이라 참가비가 없어요. 대신 참여 전후와 30일 뒤에 짧은 설문에 참여해 주셔야 해요.</p></details>
+          <details><summary>취업을 연결해 주거나 직무를 정해 주나요?</summary><p>아니요. 성향 검사는 나를 이해하기 위한 도구예요. 직업 적성을 확정하거나, 취업을 알선하거나, 정신건강 치료를 하는 프로그램은 아니에요.</p></details>
+          <details><summary>선발 결과는 언제 알 수 있나요?</summary><p>접수가 끝난 뒤 신청서에 적은 휴대폰 번호로 한 분씩 문자로 알려드려요.</p></details>
+        </div>
+      </section>
+    </div>
+
+    <p class="note"><span>주관 청년성장연구소</span><span>문의 <a class="mail" href="mailto:theloginlabteam@gmail.com">theloginlabteam@gmail.com</a></span></p>
+  </div>
+
+  <div class="sticky" id="ns-sticky" aria-hidden="true">
+    <span class="when">접수 마감<b id="ns-sticky-d">11. 7.(토)</b></span>
+    <a class="btn" href="#apply" data-apply tabindex="-1">참가 신청하기 →</a>
+  </div>
+  </div>
+
+  <div id="ns-apply" class="view" hidden>
+    <div class="wrap">
+      <div class="ap-bar">
+        <a class="back" href="#info" id="ns-back">← 프로그램 소개</a>
+        <span class="pill dark" id="ns-dday-a">모집중</span>
+      </div>
+
+      <div class="apply-card" id="ns-card">
+        <div class="ap-top" id="ns-aptop">
+          <span class="tag">NEXT STEP · 참가 신청</span>
+          <div class="stepper" id="ns-stepper" aria-label="신청 단계"><i class="on">1</i><span></span><i>2</i><span></span><i>3</i></div>
+        </div>
+
+        <form id="ns-form" novalidate>
+          <!-- STEP 1 · 지원 전형 -->
+          <div data-step="1">
+            <h1 class="ap-title">지원할 전형을<br>선택해 주세요.</h1>
+            <p class="ap-sub">여러 개에 해당하면 지금 가장 고민이 큰 상황 하나만 골라 주세요.</p>
+            <div class="pane">
+              <fieldset class="q" data-q="track">
+                <legend class="sr">지원 전형</legend>
+                <div class="tpick">
+                  <label class="tcard"><input type="radio" name="track" value="군 전역" data-key="discharge">
+                    <span><b>군 전역 전형 <span class="pill gray">5명</span></b><span class="s">전역(소집해제) 후 1년 이내</span></span><span class="mk" aria-hidden="true"></span></label>
+                  <label class="tcard"><input type="radio" name="track" value="휴학생" data-key="leave">
+                    <span><b>휴학생 전형 <span class="pill gray">5명</span></b><span class="s">현재 대학을 휴학 중</span></span><span class="mk" aria-hidden="true"></span></label>
+                  <label class="tcard"><input type="radio" name="track" value="복학생" data-key="return">
+                    <span><b>복학생 전형 <span class="pill gray">5명</span></b><span class="s">복학 후 첫 학기를 보내는 중</span></span><span class="mk" aria-hidden="true"></span></label>
+                </div>
+                <p class="err">지원할 전형을 골라 주세요.</p>
+              </fieldset>
+
+              <fieldset class="q" data-q="detail" id="ns-detail" hidden>
+                <legend><span id="ns-detail-title">전역(소집해제)한 지 얼마나 됐나요?</span><em class="req">*</em></legend>
+                <div class="chips2" data-for="discharge">
+                  <label class="chip"><input type="radio" name="detail" value="전역 3개월 이내"><span>3개월 이내</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="전역 3~6개월"><span>3~6개월</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="전역 6개월~1년"><span>6개월~1년</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="전역 1년 이상"><span>1년 이상</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="복무 중(전역 예정)"><span>아직 복무 중</span></label>
+                </div>
+                <div class="chips2" data-for="leave">
+                  <label class="chip"><input type="radio" name="detail" value="이번 학기 첫 휴학"><span>이번 학기가 처음</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="휴학 1년 이내"><span>1년 이내</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="휴학 1년 이상"><span>1년 이상</span></label>
+                </div>
+                <div class="chips2" data-for="return">
+                  <label class="chip"><input type="radio" name="detail" value="이번 학기 복학(첫 학기)"><span>이번 학기 복학</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="다음 학기 복학 예정"><span>다음 학기 복학 예정</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="복학 후 2학기 이상"><span>복학한 지 2학기 이상</span></label>
+                </div>
+                <p class="err">하나를 골라 주세요.</p>
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- STEP 2 · 지원 내용 -->
+          <div data-step="2" hidden>
+            <h1 class="ap-title">요즘 어떤 고민이<br>있는지 들려주세요.</h1>
+            <p class="ap-sub">정답은 없어요. 다만 선발 심사에 쓰이니, 내 이야기를 솔직하고 구체적으로 들려주세요.</p>
+            <div class="pane">
+              <fieldset class="q" data-q="status">
+                <legend>요즘 나는?<em class="req">*</em><span class="opt">여러 개 골라도 돼요</span></legend>
+                <div class="chips2">
+                  <label class="chip"><input type="checkbox" name="status" value="쉬는 중"><span>쉬는 중</span></label>
+                  <label class="chip"><input type="checkbox" name="status" value="복학 준비 중"><span>복학 준비 중</span></label>
+                  <label class="chip"><input type="checkbox" name="status" value="학교 다니는 중"><span>학교 다니는 중</span></label>
+                  <label class="chip"><input type="checkbox" name="status" value="휴학 중"><span>휴학 중</span></label>
+                  <label class="chip"><input type="checkbox" name="status" value="취업 준비 중"><span>취업 준비 중</span></label>
+                  <label class="chip"><input type="checkbox" name="status" value="일하는 중"><span>일하는 중</span></label>
+                  <label class="chip"><input type="checkbox" name="status" value="기타"><span>기타</span></label>
+                </div>
+                <p class="err">하나 이상 골라 주세요.</p>
+              </fieldset>
+              <div class="q" data-q="worry">
+                <label class="lab" for="ns-worry">요즘 가장 큰 고민<em class="req">*</em></label>
+                <p class="hint">선발 심사는 이 답변을 중심으로 봐요. 아래 내용을 담아 <b>100자 이상</b> 구체적으로 적어 주세요.</p>
+                <ul class="guide">
+                  <li>지금 어떤 상황인지</li>
+                  <li>무엇이 가장 고민되고, 왜 그런지</li>
+                  <li>이 프로그램으로 무엇이 달라지길 바라는지</li>
+                </ul>
+                <textarea class="field tall" id="ns-worry" name="worry" maxlength="1000" aria-describedby="ns-worry-count" placeholder="예: 전역한 지 두 달째인데, 복학까지 남은 시간을 어떻게 써야 할지 모르겠어요. 군에서는 맡은 일을 꼼꼼히 챙긴다는 말을 자주 들었는데, 그게 제 강점인지, 앞으로 어디에 살릴 수 있을지 알고 싶어요."></textarea>
+                <p class="count" id="ns-worry-count">0자 / 최소 100자</p>
+                <p class="err">고민을 100자 이상 적어 주세요.</p>
+              </div>
+              <fieldset class="q" data-q="hope">
+                <legend>이 프로그램에서 가장 얻고 싶은 것<em class="req">*</em><span class="opt">여러 개 골라도 돼요</span></legend>
+                <div class="chips2">
+                  <label class="chip"><input type="checkbox" name="hope" value="내 성향 이해"><span>내 성향 이해</span></label>
+                  <label class="chip"><input type="checkbox" name="hope" value="강점 찾기"><span>내 강점 찾기</span></label>
+                  <label class="chip"><input type="checkbox" name="hope" value="실천 계획 세우기"><span>실천 계획 세우기</span></label>
+                  <label class="chip"><input type="checkbox" name="hope" value="전문가 1:1 대화"><span>전문가와 1:1 대화</span></label>
+                  <label class="chip"><input type="checkbox" name="hope" value="기타"><span>기타</span></label>
+                </div>
+                <p class="err">하나 이상 골라 주세요.</p>
+              </fieldset>
+              <div class="q" data-q="memo">
+                <label class="lab" for="ns-memo">더 하고 싶은 말<span class="opt">선택 · 안 적어도 돼요</span></label>
+                <textarea class="field short" id="ns-memo" name="memo" maxlength="500" placeholder="궁금한 점이나 바라는 점이 있다면 적어 주세요"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3 · 신청자 정보 -->
+          <div data-step="3" hidden>
+            <h1 class="ap-title">연락받을 정보를<br>입력해 주세요.</h1>
+            <p class="ap-sub">선발 결과는 입력한 휴대폰 번호로 알려드려요.</p>
+            <div class="pane">
+              <div class="grid2">
+                <div class="q" data-q="name">
+                  <label class="lab" for="ns-name">이름<em class="req">*</em></label>
+                  <input class="field" id="ns-name" name="name" type="text" autocomplete="name" maxlength="30" placeholder="홍길동">
+                  <p class="err">이름을 입력해 주세요.</p>
+                </div>
+                <div class="q" data-q="birth_year">
+                  <label class="lab" for="ns-birth">출생연도<em class="req">*</em></label>
+                  <input class="field" id="ns-birth" name="birth_year" type="text" inputmode="numeric" autocomplete="bday-year" maxlength="4" placeholder="예: 2003">
+                  <p class="err">출생연도 4자리를 입력해 주세요.</p>
+                </div>
+                <div class="q full" data-q="phone">
+                  <label class="lab" for="ns-phone">휴대폰 번호<em class="req">*</em></label>
+                  <input class="field" id="ns-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="13" placeholder="010-1234-5678">
+                  <p class="err">휴대폰 번호를 확인해 주세요.</p>
+                </div>
+                <div class="q full" data-q="region">
+                  <span class="lab" id="ns-region-l">사는 곳<em class="req">*</em></span>
+                  <div class="addr" role="group" aria-labelledby="ns-region-l">
+                    <select class="field" id="ns-sido" name="sido" aria-label="시·도">
+                      <option value="">시·도</option>
+                      <option>서울</option><option>경기</option><option>인천</option><option>부산</option><option>대구</option>
+                      <option>광주</option><option>대전</option><option>울산</option><option>세종</option><option>강원</option>
+                      <option>충북</option><option>충남</option><option>전북</option><option>전남</option><option>경북</option>
+                      <option>경남</option><option>제주</option>
+                    </select>
+                    <select class="field" id="ns-gu-sel" aria-label="자치구" hidden>
+                      <option value="">구 선택</option>
+                      <option>강남구</option><option>강동구</option><option>강북구</option><option>강서구</option><option>관악구</option>
+                      <option>광진구</option><option>구로구</option><option>금천구</option><option>노원구</option><option>도봉구</option>
+                      <option>동대문구</option><option>동작구</option><option>마포구</option><option>서대문구</option><option>서초구</option>
+                      <option>성동구</option><option>성북구</option><option>송파구</option><option>양천구</option><option>영등포구</option>
+                      <option>용산구</option><option>은평구</option><option>종로구</option><option>중구</option><option>중랑구</option>
+                    </select>
+                    <input class="field" id="ns-gu-txt" type="text" maxlength="20" placeholder="시·군·구 (예: 수원시)" aria-label="시·군·구">
+                  </div>
+                  <p class="err">사는 곳을 시·도와 시·군·구까지 알려 주세요.</p>
+                </div>
+                <div class="q full" data-q="source">
+                  <label class="lab" for="ns-source">어디서 보고 오셨나요?<span class="opt">선택</span></label>
+                  <select class="field" id="ns-source" name="source">
+                    <option value="">선택해 주세요</option>
+                    <option>인스타그램</option>
+                    <option>페이스북</option>
+                    <option>LOGIN 홈페이지</option>
+                    <option>친구·지인 추천</option>
+                    <option>학교·커뮤니티</option>
+                    <option>기타</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="q" data-q="consent">
+                <label class="agree-all"><input type="checkbox" class="ck" id="ns-all">전체 동의하기</label>
+                <div class="agree">
+                  <div class="agree-row"><label><input type="checkbox" class="ck" id="ns-consent" name="consent" value="동의"><span>[필수] 개인정보 수집 및 이용 동의</span></label><button type="button" class="see" data-see="ns-t1" aria-expanded="false">보기</button></div>
+                  <dl class="terms" id="ns-t1" hidden>
+                    <dt>수집 항목</dt><dd>이름, 출생연도, 휴대폰 번호, 사는 곳(시·도, 시·군·구), 지원 전형과 관련 상황, 현재 상황, 고민 내용, 얻고 싶은 것, 하고 싶은 말(선택)</dd>
+                    <dt>수집 목적</dt><dd>참가자 선발, 결과 안내, 프로그램 운영 연락</dd>
+                    <dt>보유 기간</dt><dd>프로그램 종료 후 6개월 이내 파기</dd>
+                    <dt>거부 권리</dt><dd>동의를 거부할 수 있지만, 거부하면 신청할 수 없어요.</dd>
+                  </dl>
+                  <div class="agree-row"><label><input type="checkbox" class="ck" id="ns-research" name="research" value="동의"><span class="em">[선택] 응답 내용의 익명 연구 활용 동의</span></label><button type="button" class="see" data-see="ns-t2" aria-expanded="false">보기</button></div>
+                  <dl class="terms" id="ns-t2" hidden>
+                    <dt>활용 항목</dt><dd>지원 전형과 관련 상황, 현재 상황, 출생연도, 사는 곳(시·도, 시·군·구), 고민 내용, 얻고 싶은 것 (이름·연락처 제외)</dd>
+                    <dt>활용 목적</dt><dd>청년 유형별 성장지원 수요 조사와 프로그램 개선</dd>
+                    <dt>활용 방식</dt><dd>개인을 알아볼 수 없는 익명·통계 형태로만 활용</dd>
+                    <dt>보유 기간</dt><dd>결과 보고서 작성 후 파기</dd>
+                    <dt>안내</dt><dd>동의하지 않아도 신청과 선발에 불이익이 없어요.</dd>
+                  </dl>
+                </div>
+                <p class="err">[필수] 개인정보 수집 및 이용에 동의해 주세요.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hp" aria-hidden="true"><label for="ns-website">웹사이트</label><input id="ns-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+
+          <div class="nav">
+            <button class="btn ghost" type="button" id="ns-prev" hidden>← 이전</button>
+            <button class="btn" type="submit" id="ns-submit">다음으로 →</button>
+          </div>
+          <p class="status" id="ns-status" role="alert" aria-live="assertive"></p>
+        </form>
+
+        <div class="done" id="ns-done" hidden>
+          <div class="confetti" id="ns-confetti" aria-hidden="true"></div>
+          <span class="burst" aria-hidden="true"><svg width="44" height="44" viewBox="0 0 24 24"><path fill="#121315" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg></span>
+          <h1 id="ns-done-title">신청이 접수됐어요!</h1>
+          <p id="ns-done-text">이제 편하게 기다려 주세요.<br>접수가 끝나면 선발 결과를 문자로 알려드려요.</p>
+          <dl id="ns-done-info" hidden>
+            <div><dt>지원 전형</dt><dd id="ns-done-track"></dd></div>
+            <div><dt>신청자</dt><dd id="ns-done-name"></dd></div>
+            <div><dt>접수 일시</dt><dd id="ns-done-time"></dd></div>
+          </dl>
+          <a class="btn" href="#info" id="ns-done-home">프로그램 소개로 →</a>
+        </div>
+      </div>
+
+      <p class="note"><span>주관 청년성장연구소</span><span>문의 <a class="mail" href="mailto:theloginlabteam@gmail.com">theloginlabteam@gmail.com</a></span></p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  /* ───────── 설정: 여기만 바꾸면 돼요 ───────── */
+  var CONFIG = {
+    // 구글 시트 Apps Script '웹 앱' 주소 (https://script.google.com/macros/s/.../exec)
+    SCRIPT_URL: 'PASTE_WEB_APP_URL_HERE',
+    // '← 프로그램 목록' 링크 주소
+    LIST_URL: '/program',
+    // 접수 마감 (한국 시간). 지나면 신청 버튼이 막히고 마감 안내가 보여요.
+    DEADLINE: '2026-11-07T23:59:59+09:00'
+  };
+  /* ─────────────────────────────────────── */
+
+  var $ = function (id) { return document.getElementById(id); };
+  var landing = $('ns-landing'), apply = $('ns-apply');
+  var deadline = new Date(CONFIG.DEADLINE);
+  function dday() {
+    var n = new Date(Date.now() + 9 * 3600e3), e = new Date(deadline.getTime() + 9 * 3600e3);
+    return Math.round((Date.UTC(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate()) - Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate())) / 864e5);
+  }
+  var closed = Date.now() > deadline.getTime();
+  var d = dday();
+  var dLabel = d === 0 ? '오늘 마감' : 'D-' + d;
+  var params;
+  try { params = new URLSearchParams(location.search); } catch (e) { params = null; }
+
+  /* ════════ 소개 화면 ════════ */
+  $('ns-list').href = CONFIG.LIST_URL;
+  $('ns-dday').textContent = $('ns-dday-a').textContent = closed ? '모집마감' : '모집중 · ' + dLabel;
+  if (closed) {
+    document.querySelectorAll('#ns-root .tstat').forEach(function (s) { s.textContent = '마감'; s.className = 'pill off tstat'; });
+    $('ns-dday2').textContent = '이번 모집은 마감됐어요. 관심 가져 주셔서 감사해요.';
+    var fd = $('ns-flow-d'); fd.textContent = '접수 마감'; fd.closest('.fs').classList.remove('now');
+  } else {
+    $('ns-dday2').innerHTML = '<b>11. 7.(토) 23:59</b> 마감 · ' + dLabel;
+  }
+  $('ns-sticky-d').textContent = closed ? '마감' : '11. 7.(토) · ' + dLabel;
+
+  // 신청 버튼 → 같은 페이지에서 신청 화면으로
+  var wantTrack = null;
+  document.querySelectorAll('#ns-landing [data-apply]').forEach(function (a) {
+    if (closed) {
+      a.removeAttribute('href');
+      a.setAttribute('aria-disabled', 'true');
+      if (a.classList.contains('btn')) a.textContent = '모집이 마감됐어요';
+      if (a.classList.contains('go')) a.hidden = true;
+      return;
+    }
+    a.addEventListener('click', function () { wantTrack = a.getAttribute('data-apply') || null; });
+  });
+
+  // 탭: 지금 보고 있는 섹션 표시
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('#ns-root .tabs a'));
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      var s = document.querySelector(t.getAttribute('href'));
+      if (s) s.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        tabs.forEach(function (t) { t.classList.toggle('on', t.getAttribute('href') === '#' + en.target.id); });
+      });
+    }, { rootMargin: '-35% 0px -60% 0px' });
+    tabs.forEach(function (t) { var s = document.querySelector(t.getAttribute('href')); if (s) io.observe(s); });
+  }
+
+  // 모바일 하단 고정 신청 바
+  var sticky = $('ns-sticky');
+  var heroVisible = true;
+  function syncSticky() { sticky.classList.toggle('on', !closed && !heroVisible && !landing.hidden); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (en) { heroVisible = en[0].isIntersecting; syncSticky(); }).observe($('ns-hero-cta'));
+  }
+
+  /* ════════ 화면 전환 (#apply) ════════ */
+  var view = null;
+  function route() {
+    var next = (location.hash === '#apply' && !closed) ? 'apply' : 'landing';
+    if (next === view) return;
+    view = next;
+    landing.hidden = view !== 'landing';
+    apply.hidden = view !== 'apply';
+    if (view === 'apply') {
+      if (wantTrack) preselect(wantTrack);
+      wantTrack = null;
+      window.scrollTo(0, 0);
+    } else if (location.hash === '#info' || location.hash === '') {
+      window.scrollTo(0, 0);
+    }
+    syncSticky();
+  }
+  window.addEventListener('hashchange', route);
+
+  /* ════════ 신청 화면 ════════ */
+  var form = $('ns-form'), card = $('ns-card'), nextBtn = $('ns-submit'), prev = $('ns-prev');
+  var statusEl = $('ns-status'), done = $('ns-done'), aptop = $('ns-aptop'), detailBox = $('ns-detail');
+  var openedAt = null, step = 1;
+
+  var STEPS = { 1: ['track', 'detail'], 2: ['status', 'worry', 'hope'], 3: ['name', 'birth_year', 'phone', 'region', 'consent'] };
+  var panes = form.querySelectorAll('[data-step]');
+  var dots = document.querySelectorAll('#ns-stepper i');
+  function show(n, scroll) {
+    step = n;
+    panes.forEach(function (p) { p.hidden = +p.getAttribute('data-step') !== n; });
+    dots.forEach(function (dot, i) { dot.className = i + 1 < n ? 'ok' : (i + 1 === n ? 'on' : ''); });
+    prev.hidden = n === 1;
+    nextBtn.textContent = n === 3 ? '신청서 제출 →' : '다음으로 →';
+    statusEl.textContent = '';
+    if (scroll) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  prev.addEventListener('click', function () { if (step > 1) show(step - 1, true); });
+
+  var DETAIL = {
+    discharge: { title: '전역(소집해제)한 지 얼마나 됐나요?', ph: '예: 전역한 지 두 달째인데, 복학까지 남은 시간을 어떻게 써야 할지 모르겠어요. 군에서는 맡은 일을 꼼꼼히 챙긴다는 말을 자주 들었는데, 그게 제 강점인지, 앞으로 어디에 살릴 수 있을지 알고 싶어요.' },
+    leave: { title: '휴학한 지 얼마나 됐나요?', ph: '예: 휴학한 지 반년이 지났는데 계획과 달리 시간만 흘러가는 것 같아요. 하고 싶은 건 많은데 무엇부터 해야 할지 정하지 못하고 있어서, 나에게 맞는 방향을 찾고 싶어요.' },
+    'return': { title: '언제 복학했나요?', ph: '예: 복학했는데 예전처럼 수업과 사람들에 적응하기가 쉽지 않아요. 동기들은 다 앞서가는 것 같아 조급한데, 제가 잘할 수 있는 것부터 차근차근 다시 잡아 보고 싶어요.' }
+  };
+  var tracks = form.querySelectorAll('input[name="track"]');
+  function setTrack(key) {
+    tracks.forEach(function (r) { r.closest('.tcard').classList.toggle('on', r.checked); });
+    if (!DETAIL[key]) return;
+    detailBox.hidden = false;
+    $('ns-detail-title').textContent = DETAIL[key].title;
+    detailBox.querySelectorAll('.chips2').forEach(function (p) {
+      var mine = p.getAttribute('data-for') === key;
+      p.hidden = !mine;
+      if (!mine) p.querySelectorAll('input').forEach(function (i) { i.checked = false; });
+    });
+    $('ns-worry').placeholder = DETAIL[key].ph;
+  }
+  function preselect(key) {
+    tracks.forEach(function (r) { if (r.getAttribute('data-key') === key) { r.checked = true; setTrack(key); mark('track', true); } });
+  }
+  tracks.forEach(function (r) { r.addEventListener('change', function () { setTrack(r.getAttribute('data-key')); }); });
+
+  // 사는 곳: 서울이면 구 목록, 그 외는 직접 입력
+  var sido = $('ns-sido'), guSel = $('ns-gu-sel'), guTxt = $('ns-gu-txt');
+  function syncAddr() {
+    var seoul = sido.value === '서울', sejong = sido.value === '세종';
+    guSel.hidden = !seoul; guTxt.hidden = seoul || sejong;
+  }
+  sido.addEventListener('change', syncAddr);
+  function gu() { return sido.value === '서울' ? guSel.value : (sido.value === '세종' ? '세종시' : guTxt.value.trim()); }
+
+  // 동의
+  var all = $('ns-all'), c1 = $('ns-consent'), c2 = $('ns-research');
+  all.addEventListener('change', function () { c1.checked = c2.checked = all.checked; mark('consent', rules.consent()); });
+  [c1, c2].forEach(function (c) { c.addEventListener('change', function () { all.checked = c1.checked && c2.checked; }); });
+  form.querySelectorAll('.see').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = $(b.getAttribute('data-see'));
+      t.hidden = !t.hidden;
+      b.textContent = t.hidden ? '보기' : '닫기';
+      b.setAttribute('aria-expanded', String(!t.hidden));
+    });
+  });
+
+  // 입력 도우미
+  var worry = $('ns-worry'), worryCount = $('ns-worry-count'), WORRY_MIN = 100;
+  worry.addEventListener('input', function () {
+    var n = worry.value.trim().length;
+    worryCount.textContent = n + '자 / 최소 ' + WORRY_MIN + '자';
+    worryCount.classList.toggle('ok', n >= WORRY_MIN);
+  });
+  var phone = $('ns-phone');
+  phone.addEventListener('input', function () {
+    var v = phone.value.replace(/\D/g, '').slice(0, 11);
+    if (v.length > 7) v = v.slice(0, 3) + '-' + v.slice(3, v.length - 4) + '-' + v.slice(-4);
+    else if (v.length > 3) v = v.slice(0, 3) + '-' + v.slice(3);
+    phone.value = v;
+  });
+  var birth = $('ns-birth');
+  birth.addEventListener('input', function () { birth.value = birth.value.replace(/\D/g, '').slice(0, 4); });
+
+  // 검사
+  function val(name) { var el = form.elements[name]; return el && el.value != null ? String(el.value).trim() : ''; }
+  function picked(name) {
+    return Array.prototype.slice.call(form.querySelectorAll('input[name="' + name + '"]:checked')).map(function (i) { return i.value; });
+  }
+  var rules = {
+    track: function () { return picked('track').length === 1; },
+    detail: function () { return detailBox.hidden || picked('detail').length === 1; },
+    status: function () { return picked('status').length > 0; },
+    worry: function () { return val('worry').length >= WORRY_MIN; },
+    hope: function () { return picked('hope').length > 0; },
+    name: function () { return val('name').length >= 1; },
+    birth_year: function () { var y = +val('birth_year'); return /^\d{4}$/.test(val('birth_year')) && y >= 1960 && y <= 2011; },
+    phone: function () { return /^01[016789]-?\d{3,4}-?\d{4}$/.test(val('phone')); },
+    region: function () { return !!sido.value && gu().length >= 1; },
+    consent: function () { return c1.checked; }
+  };
+  function box(key) { return form.querySelector('[data-q="' + key + '"]'); }
+  function mark(key, ok) { var b = box(key); if (b) b.classList.toggle('bad', !ok); }
+  Object.keys(rules).forEach(function (key) {
+    var b = box(key);
+    if (!b) return;
+    ['change', 'input'].forEach(function (ev) {
+      b.addEventListener(ev, function () {
+        if (!openedAt) openedAt = Date.now();
+        if (b.classList.contains('bad')) mark(key, rules[key]());
+      });
+    });
+  });
+  function checkStep(n) {
+    var first = null;
+    STEPS[n].forEach(function (key) {
+      var ok = rules[key]();
+      mark(key, ok);
+      if (!ok && !first) first = key;
+    });
+    if (first) {
+      var b = box(first);
+      b.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      var f = b.querySelector('input:not([type=hidden]):not([hidden]),textarea,select:not([hidden])');
+      if (f) setTimeout(function () { try { f.focus({ preventScroll: true }); } catch (x) {} }, 350);
+      return false;
+    }
+    return true;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    statusEl.textContent = '';
+    if (step === 1 && picked('track').length === 0) detailBox.hidden = true;
+    if (!checkStep(step)) return;
+    if (step < 3) { show(step + 1, true); return; }
+
+    if (val('website')) { showDone(); return; } // 스팸 차단용 숨은 칸
+    if (!/^https:\/\/script\.google\.com\//.test(CONFIG.SCRIPT_URL)) {
+      statusEl.textContent = '아직 신청 시트가 연결되지 않았어요. (관리자: SCRIPT_URL을 설정해 주세요)';
+      return;
+    }
+    var data = {
+      track: picked('track')[0],
+      detail: picked('detail')[0] || '',
+      status: picked('status').join(', '),
+      worry: val('worry'),
+      hope: picked('hope').join(', '),
+      memo: val('memo'),
+      name: val('name'),
+      birth_year: val('birth_year'),
+      phone: val('phone'),
+      sido: sido.value,
+      gu: gu(),
+      source: val('source'),
+      consent: '동의',
+      research: c2.checked ? '동의' : '미동의',
+      seconds: String(Math.round((Date.now() - (openedAt || Date.now())) / 1000)),
+      page: location.href.split('#')[0].split('?')[0]
+    };
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) { data[k] = (params && params.get(k)) || ''; });
+
+    nextBtn.disabled = true; prev.disabled = true;
+    nextBtn.textContent = '제출하는 중…';
+    fetch(CONFIG.SCRIPT_URL, { method: 'POST', body: new URLSearchParams(data) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) { if (res && res.ok) showDone(data); else throw new Error((res && res.error) || 'fail'); })
+      .catch(function () {
+        nextBtn.disabled = false; prev.disabled = false;
+        nextBtn.textContent = '신청서 제출 →';
+        statusEl.textContent = '제출이 안 됐어요. 잠시 후 다시 눌러 주세요. 계속 안 되면 theloginlabteam@gmail.com으로 알려 주세요.';
+      });
+  });
+
+  function showDone(data) {
+    form.hidden = true; aptop.hidden = true; done.hidden = false;
+    if (data) {
+      var t = new Date(Date.now() + 9 * 3600e3);
+      var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+      $('ns-done-track').textContent = data.track + ' 전형';
+      $('ns-done-name').textContent = data.name;
+      $('ns-done-time').textContent = t.getUTCFullYear() + '. ' + (t.getUTCMonth() + 1) + '. ' + t.getUTCDate() + '. ' + pad(t.getUTCHours()) + ':' + pad(t.getUTCMinutes());
+      $('ns-done-info').hidden = false;
+    }
+    var cf = $('ns-confetti');
+    var colors = ['#F8F25A', '#121315', '#E6E8ED', '#F3EC4A'];
+    for (var i = 0; i < 18; i++) {
+      var s = document.createElement('i');
+      var left = i % 2 ? 3 + (i * 7) % 17 : 80 + (i * 7) % 17, top = 2 + (i * 13) % 34;
+      s.style.cssText = 'left:' + left + '%;top:' + top + '%;background:' + colors[i % 4] + ';transform:rotate(' + (i * 29) + 'deg)';
+      cf.appendChild(s);
+    }
+    window.scrollTo(0, 0);
+  }
+
+  // 주소에 ?track= 이 있으면 그 전형을 미리 골라 둬요 (전형별 광고용)
+  var pre = params && params.get('track');
+  if (pre) preselect(pre);
+  show(1, false);
+  syncAddr();
+  route();
+})();
+</script>
+<!-- ▲▲▲ 여기까지 복사 ▲▲▲ -->
+</body>
+</html>
