@@ -995,10 +995,12 @@
     fetch(CONFIG.SCRIPT_URL, { method: 'POST', body: new URLSearchParams(data) })
       .then(function (r) { return r.json(); })
       .then(function (res) { if (res && res.ok) showDone(data); else throw new Error((res && res.error) || 'fail'); })
-      .catch(function () {
+      .catch(function (err) {
         nextBtn.disabled = false; prev.disabled = false;
         nextBtn.textContent = '신청서 제출 →';
-        statusEl.textContent = '제출이 안 됐어요. 잠시 후 다시 눌러 주세요. 계속 안 되면 theloginlabteam@gmail.com으로 알려 주세요.';
+        statusEl.textContent = err && err.message === 'already'
+          ? '이 휴대폰 번호로 이미 접수된 신청이 있어요. 내용을 고쳐야 하면 theloginlabteam@gmail.com으로 알려 주세요.'
+          : '제출이 안 됐어요. 잠시 후 다시 눌러 주세요. 계속 안 되면 theloginlabteam@gmail.com으로 알려 주세요.';
       });
   });
 
