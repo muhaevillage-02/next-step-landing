@@ -7,6 +7,7 @@
 <meta name="description" content="군 전역·휴학·복학 청년 15명 모집. 성향·강점 분석, 전문가 1:1 강점 코칭, 30일 실천 설계를 무료로 지원해요. 11. 7.(토) 마감.">
 <meta property="og:title" content="청년 NEXT STEP 프로젝트 참여자 모집">
 <meta property="og:description" content="군 전역·휴학·복학 청년 15명 모집. 성향·강점 분석, 전문가 1:1 강점 코칭, 30일 실천 설계를 무료로 지원해요. 11. 7.(토) 마감.">
+<meta property="og:image" content="https://muhaevillage-02.github.io/next-step-landing/poster.jpg">
 <style>html,body{margin:0;background:#F2F3F7}</style>
 
 </head>
@@ -14,7 +15,7 @@
 <!-- ▼▼▼ 홈페이지 빌더의 'HTML 코드' 블록에 넣을 때는 여기부터 복사 ▼▼▼ -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
-/* Layout: LOGIN lab 부트캠프 상세 페이지 형식 — 연회색 바탕 위 둥근 흰 카드, 노란 히어로 카드 + 오른쪽 요약 카드, 탭 바, 2열 카드 행. 신청은 3단계 카드형. 스타일은 .ns 안에서만 적용. */
+/* Layout: LOGIN lab 부트캠프 상세 페이지 형식 — 연회색 바탕 위 둥근 흰 카드, 포스터 히어로 + 오른쪽 요약 카드, 탭 바, 2열 카드 행. 신청은 3단계 카드형. 스타일은 .ns 안에서만 적용. */
 .ns{
   --page:#F2F3F7; --card:#FFFFFF; --tile:#F5F6F8; --ink:#111214; --sub:#5C616B; --faint:#9A9FA9; --line:#E6E8ED; --field:#D9DCE2;
   --yellow:#F3EC4A; --yellow-btn:#F8F25A; --yellow-deep:#D9D02C; --yellow-soft:#FCFBDD; --yellow-pale:#FEFEF3;
@@ -61,11 +62,11 @@
 
 /* ── 상단: 히어로 + 요약 ── */
 .ns .top{display:grid;gap:14px}
-.ns .hero{position:relative;overflow:hidden;background:var(--yellow);border-radius:24px;padding:22px 22px 26px;min-height:300px;display:flex;flex-direction:column}
-.ns .hero .row{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.ns .hero .title{margin-top:auto;position:relative;z-index:1}
-.ns .hero .big{font-size:clamp(52px,15vw,96px);font-weight:900;line-height:.92;letter-spacing:-.055em}
-.ns .hero .ko{margin-top:12px;font-size:15px;font-weight:700}
+.ns .hero{overflow:hidden;background:#fff;border-radius:24px;display:grid;align-items:center}
+.ns .hero .pf{position:relative}
+.ns .hero img{display:block;width:100%;height:auto}
+.ns .hero #ns-dday{position:absolute;top:3%;right:3%}
+.ns .hero .cta-hit{position:absolute;left:5.6%;right:5.6%;top:92.5%;height:5.2%;border-radius:999px}
 .ns .spark{position:absolute;color:var(--yellow-deep)}
 .ns .spark path{fill:currentColor}
 .ns .info .chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
@@ -262,7 +263,6 @@
 @media (min-width:860px){
   .ns .wrap{padding-top:28px}
   .ns .top{grid-template-columns:1.32fr 1fr;align-items:stretch}
-  .ns .hero{padding:28px 30px 32px;min-height:430px}
   .ns .card{padding:30px 30px}
   .ns .two{grid-template-columns:1.32fr 1fr}
   .ns .two.even{grid-template-columns:1fr 1fr}
@@ -330,16 +330,12 @@
 
     <div class="top">
       <div class="hero">
-        <div class="row">
-          <span class="tag">LOGIN PROJECT · 3 TRACKS</span>
+        <div class="pf">
+          <!-- 홈페이지 빌더에 붙여 넣어도 보이도록 절대 주소 사용 -->
+          <img src="https://muhaevillage-02.github.io/next-step-landing/poster.jpg" width="1080" height="1080" fetchpriority="high"
+            alt="LOGIN lab 생애전환기 지원 프로젝트 포스터. 나를 알면, 다음 단계가 보인다. 군 전역자·휴학생·복학생 등 다음 단계가 막막한 청년을 위한 자기이해 기반 성장 설계 프로그램. 01 AI 활용 성향·강점 분석, 02 1:1 맞춤 코칭, 03 30일 실행 플랜. 모집 인원 총 15명, 전형별 5명, 시범 참여 무료.">
           <span class="pill dark" id="ns-dday">모집중</span>
-        </div>
-        <svg class="spark" style="right:8%;bottom:22%;width:84px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
-        <svg class="spark" style="right:3%;bottom:44%;width:30px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
-        <svg class="spark" style="right:22%;bottom:9%;width:22px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
-        <div class="title">
-          <p class="big">NEXT<br>STEP</p>
-          <p class="ko">청년 생애전환기 자기이해·강점 성장 프로젝트</p>
+          <a class="cta-hit" href="#apply" data-apply aria-label="지금 신청하기"></a>
         </div>
       </div>
 
