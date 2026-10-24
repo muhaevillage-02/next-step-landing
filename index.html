@@ -10,6 +10,14 @@
 <meta property="og:image" content="https://muhaevillage-02.github.io/next-step-landing/poster.jpg">
 <style>html,body{margin:0;background:#F2F3F7}</style>
 
+<!-- Meta Pixel (무해한마을 1441218827804393) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1441218827804393');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1441218827804393&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 <!-- ▼▼▼ 홈페이지 빌더의 'HTML 코드' 블록에 넣을 때는 여기부터 복사 ▼▼▼ -->
@@ -954,12 +962,18 @@
     return true;
   }
 
+  /* Meta 픽셀 전환 이벤트 — 같은 브라우저에서 한 번만 */
+  function nsTrackOnce(ev, key) {
+    try { if (localStorage.getItem(key)) return; } catch (x) {}
+    if (window.fbq) { window.fbq('track', ev); try { localStorage.setItem(key, '1'); } catch (x) {} }
+  }
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     statusEl.textContent = '';
     if (step === 1 && picked('track').length === 0) detailBox.hidden = true;
     if (!checkStep(step)) return;
-    if (step < 3) { show(step + 1, true); return; }
+    if (step < 3) { if (step === 2) nsTrackOnce('Lead', 'ns_lead_sent'); show(step + 1, true); return; }
 
     if (val('website')) { showDone(); return; } // 스팸 차단용 숨은 칸
     if (!/^https:\/\/script\.google\.com\//.test(CONFIG.SCRIPT_URL)) {
@@ -990,7 +1004,7 @@
     nextBtn.textContent = '제출하는 중…';
     fetch(CONFIG.SCRIPT_URL, { method: 'POST', body: new URLSearchParams(data) })
       .then(function (r) { return r.json(); })
-      .then(function (res) { if (res && res.ok) showDone(data); else throw new Error((res && res.error) || 'fail'); })
+      .then(function (res) { if (res && res.ok) { nsTrackOnce('CompleteRegistration', 'ns_submit_sent'); showDone(data); } else throw new Error((res && res.error) || 'fail'); })
       .catch(function (err) {
         nextBtn.disabled = false; prev.disabled = false;
         nextBtn.textContent = '신청서 제출 →';
