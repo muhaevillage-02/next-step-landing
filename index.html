@@ -204,7 +204,6 @@ fbq('track', 'PageView');
 .ns .guide li::before{content:"";position:absolute;left:0;top:.72em;width:4px;height:4px;border-radius:50%;background:var(--faint)}
 .ns textarea.field.tall{min-height:190px}
 .ns .count{margin-top:-4px;font-size:12.5px;color:var(--faint);text-align:right;font-variant-numeric:tabular-nums}
-.ns .count.ok{color:var(--ink);font-weight:700}
 .ns .tpick{display:grid;gap:8px}
 .ns .tcard{position:relative;display:grid;grid-template-columns:1fr 24px;gap:12px;align-items:center;border:1.5px solid var(--line);
   border-radius:16px;padding:15px 16px;background:var(--card);cursor:pointer;transition:border-color .12s,background .12s}
@@ -602,15 +601,15 @@ fbq('track', 'PageView');
               </fieldset>
               <div class="q" data-q="worry">
                 <label class="lab" for="ns-worry">요즘 가장 큰 고민<em class="req">*</em></label>
-                <p class="hint">선발 심사는 이 답변을 중심으로 봐요. 아래 내용을 담아 <b>100자 이상</b> 구체적으로 적어 주세요.</p>
+                <p class="hint">선발 심사는 이 답변을 중심으로 봐요. 아래 내용을 담아 구체적으로 적어 주세요.</p>
                 <ul class="guide">
                   <li>지금 어떤 상황인지</li>
                   <li>무엇이 가장 고민되고, 왜 그런지</li>
                   <li>이 프로그램으로 무엇이 달라지길 바라는지</li>
                 </ul>
                 <textarea class="field tall" id="ns-worry" name="worry" maxlength="1000" aria-describedby="ns-worry-count" placeholder="예: 전역한 지 두 달째인데, 복학까지 남은 시간을 어떻게 써야 할지 모르겠어요. 군에서는 맡은 일을 꼼꼼히 챙긴다는 말을 자주 들었는데, 그게 제 강점인지, 앞으로 어디에 살릴 수 있을지 알고 싶어요."></textarea>
-                <p class="count" id="ns-worry-count">0자 / 최소 100자</p>
-                <p class="err">고민을 100자 이상 적어 주세요.</p>
+                <p class="count" id="ns-worry-count">0 / 1000자</p>
+                <p class="err">요즘 가장 큰 고민을 적어 주세요.</p>
               </div>
               <fieldset class="q" data-q="hope">
                 <legend>이 프로그램에서 가장 얻고 싶은 것<em class="req">*</em><span class="opt">여러 개 골라도 돼요</span></legend>
@@ -901,12 +900,8 @@ fbq('track', 'PageView');
   });
 
   // 입력 도우미
-  var worry = $('ns-worry'), worryCount = $('ns-worry-count'), WORRY_MIN = 100;
-  worry.addEventListener('input', function () {
-    var n = worry.value.trim().length;
-    worryCount.textContent = n + '자 / 최소 ' + WORRY_MIN + '자';
-    worryCount.classList.toggle('ok', n >= WORRY_MIN);
-  });
+  var worry = $('ns-worry'), worryCount = $('ns-worry-count');
+  worry.addEventListener('input', function () { worryCount.textContent = worry.value.length + ' / 1000자'; });
   var phone = $('ns-phone');
   phone.addEventListener('input', function () {
     var v = phone.value.replace(/\D/g, '').slice(0, 11);
@@ -926,7 +921,7 @@ fbq('track', 'PageView');
     track: function () { return picked('track').length === 1; },
     detail: function () { return detailBox.hidden || picked('detail').length === 1; },
     status: function () { return picked('status').length > 0; },
-    worry: function () { return val('worry').length >= WORRY_MIN; },
+    worry: function () { return val('worry').length > 0; },
     hope: function () { return picked('hope').length > 0; },
     name: function () { return val('name').length >= 1; },
     birth_year: function () { var y = +val('birth_year'); return /^\d{4}$/.test(val('birth_year')) && y >= 1960 && y <= 2011; },

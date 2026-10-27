@@ -22,7 +22,6 @@ var HEADERS = [
   "작성 시간(초)", "신청 페이지",
   "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"
 ];
-var WORRY_MIN = 100; // index.html 의 WORRY_MIN 과 같게 유지
 
 function out(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(ContentService.MimeType.JSON);
@@ -37,7 +36,7 @@ function doPost(e) {
     // 링크나 입력값이 수식(=, +, -, @ 로 시작)으로 실행되지 않도록 글자로 저장
     function txt(k) { var s = v(k); return /^[=+\-@]/.test(s) ? "'" + s : s; }
 
-    if (!v("track") || !v("status") || v("worry").length < WORRY_MIN || !v("hope") || !v("name") ||
+    if (!v("track") || !v("status") || !v("worry") || !v("hope") || !v("name") ||
         !/^\d{4}$/.test(v("birth_year")) || !v("phone") || !v("sido") || v("consent") !== "동의") {
       return out({ ok: false, error: "invalid" });
     }
