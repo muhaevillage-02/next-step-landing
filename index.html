@@ -763,6 +763,18 @@ fbq('track', 'PageView');
   var dLabel = d === 0 ? '오늘 마감' : 'D-' + d;
   var params;
   try { params = new URLSearchParams(location.search); } catch (e) { params = null; }
+  // 광고 유입(UTM): 주소에 있으면 저장해 두고, 없으면 7일 안에 저장된 값을 쓴다 (광고로 왔다가 나중에 다시 와서 신청해도 남게)
+  var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'], UTM_STORE = 'ns_utm';
+  var utm = (function () {
+    var now = {}, has = false;
+    UTM_KEYS.forEach(function (k) { var v = params && params.get(k); if (v) { now[k] = v.trim().slice(0, 200); has = true; } });
+    try {
+      if (has) { localStorage.setItem(UTM_STORE, JSON.stringify({ at: Date.now(), v: now })); return now; }
+      var s = JSON.parse(localStorage.getItem(UTM_STORE) || 'null');
+      if (s && s.v && Date.now() - s.at < 7 * 864e5) return s.v;
+    } catch (x) {}
+    return has ? now : { utm_source: 'direct' };
+  })();
 
   /* ════════ 소개 화면 ════════ */
   $('ns-list').href = CONFIG.LIST_URL;
@@ -994,13 +1006,14 @@ fbq('track', 'PageView');
       seconds: String(Math.round((Date.now() - (openedAt || Date.now())) / 1000)),
       page: location.href.split('#')[0].split('?')[0]
     };
-    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) { data[k] = (params && params.get(k)) || ''; });
+    // 광고 ID 같은 숫자만 있는 값은 시트가 숫자로 바꿔 끝자리를 뭉개지 않게 글자로 보낸다 (' 는 시트에 보이지 않음)
+    UTM_KEYS.forEach(function (k) { var v = utm[k] || ''; data[k] = /^\d+$/.test(v) ? "'" + v : v; });
 
     nextBtn.disabled = true; prev.disabled = true;
     nextBtn.textContent = '제출하는 중…';
     fetch(CONFIG.SCRIPT_URL, { method: 'POST', body: new URLSearchParams(data) })
       .then(function (r) { return r.json(); })
-      .then(function (res) { if (res && res.ok) { nsTrackOnce('CompleteRegistration', 'ns_submit_sent'); showDone(data); } else throw new Error((res && res.error) || 'fail'); })
+      .then(function (res) { if (res && res.ok) { nsTrackOnce('CompleteRegistration', 'ns_submit_sent'); try { localStorage.removeItem(UTM_STORE); } catch (x) {} showDone(data); } else throw new Error((res && res.error) || 'fail'); })
       .catch(function (err) {
         nextBtn.disabled = false; prev.disabled = false;
         nextBtn.textContent = '신청서 제출 →';
