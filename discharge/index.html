@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>군 전역 청년 NEXT STEP 참여자 모집</title>
-<meta name="description" content="전역(소집해제) 후 2년 이내 청년 모집. 군 생활 경험을 내 강점으로 정리해요. 성향·강점 분석 리포트, 전문가 1:1 코칭, 30일 실천 계획을 모두 무료로 받아요. 11. 7.(토) 마감.">
+<title>군 전역 청년 NEXT STEP · 참가비 0원</title>
+<meta name="description" content="군대에서 보낸 시간, 공백이 아니라 내 강점이에요. 전역(소집해제) 후 2년 이내 청년이라면 성향·강점 분석 리포트, 전문가 1:1 코칭, 30일 실천 로드맵을 참가비 없이 받을 수 있어요. 11. 7.(토) 마감.">
 <meta property="og:title" content="군 전역 청년 NEXT STEP 참여자 모집">
-<meta property="og:description" content="전역(소집해제) 후 2년 이내 청년 모집. 군 생활 경험을 내 강점으로 정리해요. 성향·강점 분석 리포트, 전문가 1:1 코칭, 30일 실천 계획을 모두 무료로 받아요. 11. 7.(토) 마감.">
+<meta property="og:description" content="군대에서 보낸 시간, 공백이 아니라 내 강점이에요. 전역(소집해제) 후 2년 이내 청년이라면 성향·강점 분석 리포트, 전문가 1:1 코칭, 30일 실천 로드맵을 참가비 없이 받을 수 있어요. 11. 7.(토) 마감.">
 <meta property="og:image" content="https://muhaevillage-02.github.io/next-step-landing/poster.jpg">
 <style>html,body{margin:0;background:#F2F3F7}</style>
 
@@ -339,22 +339,32 @@ fbq('track', 'PageView');
 .ns textarea.field.short{min-height:88px}
 .ns span.lab{display:block}
 
-/* 군 전역 광고용 한 페이지: 포스터 없이 소개 카드 → 취지 → 리워드 → 바로 신청 */
+/* 군 전역 광고용 한 페이지: 첫 화면(고민 → 약속 → 받는 것) → 참여 전후 → 받는 것 상세 → 취지·진행 → 바로 신청 */
 .ns .info{position:relative;overflow:hidden;display:grid;grid-template-areas:"main" "facts" "cta";background:linear-gradient(160deg,var(--yellow-soft) 0%,var(--card) 72%)}
 .ns .info .main{grid-area:main;position:relative;z-index:1}
-.ns .info dl{grid-area:facts;position:relative;z-index:1}
 .ns .info .cta{grid-area:cta;position:relative;z-index:1}
 .ns .info .spark{right:-34px;top:-34px;width:120px;color:var(--yellow-btn)}
-.ns .info .kicker{margin-top:16px;font-size:13.5px;font-weight:700;color:var(--sub)}
-.ns .info h1{margin-top:6px;font-size:clamp(30px,8.4vw,42px);line-height:1.22}
+.ns .info .eyebrow{margin-top:18px;font-size:15px;font-weight:700;color:var(--sub)}
+.ns .info h1{margin-top:6px;font-size:clamp(30px,8.6vw,44px);line-height:1.24}
 .ns .info .desc{margin-top:12px;font-size:15.5px;color:var(--sub)}
+.ns .gets{grid-area:facts;position:relative;z-index:1;margin-top:20px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.ns .gets .gh{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;font-weight:800;color:var(--sub)}
+.ns .gets .price{color:var(--ink);background:var(--yellow-btn);border-radius:999px;padding:3px 10px}
+.ns .gets ul{margin-top:12px;display:grid;gap:10px}
+.ns .gets li{display:grid;grid-template-columns:20px 1fr;gap:10px;font-size:15.5px;font-weight:700;align-items:start}
+.ns .gets li svg{margin-top:2px}
+.ns .gets .who{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--faint)}
+.ns .gets .who b{color:var(--sub);margin-right:6px}
 @media (min-width:860px){
   .ns .info{grid-template-columns:1.32fr 1fr;grid-template-areas:"main facts" "cta facts";column-gap:40px;padding:40px}
   .ns .info .spark{width:170px;right:-44px;top:-44px}
-  .ns .info dl{margin-top:0;border-top:0;padding:20px 22px;background:var(--card);border-radius:18px;align-self:center}
+  .ns .gets{margin-top:0;align-self:center;padding:22px 24px}
   .ns .info .cta{justify-items:start;padding-top:6px}
   .ns .info .cta .btn{width:auto;min-width:260px}
 }
+.ns .pain .cap{margin-top:6px}
+@media (min-width:860px){ .ns .pain .ba{grid-template-columns:1fr 1fr} }
+.ns .proc div span{display:block}
 .ns #apply{scroll-margin-top:16px}
 .ns .done h2{font-size:26px;font-weight:800;letter-spacing:-.035em;margin-top:6px}
 .ns .closed-msg{margin-top:22px;padding:18px;border-radius:14px;background:var(--tile);text-align:center;color:var(--sub);font-weight:600}
@@ -366,48 +376,63 @@ fbq('track', 'PageView');
     <header class="card info">
       <svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
       <div class="main">
-        <div class="chips"><span class="pill dark" id="ns-dday">모집중</span><span class="pill gray">시범사업</span><span class="pill yel">참가비 무료</span></div>
-        <p class="kicker">LOGIN lab 생애전환기 지원 프로젝트</p>
-        <h1>군 전역 청년<br>NEXT STEP</h1>
-        <p class="desc">나를 알면, 다음 단계가 보여요.<br>군 생활 경험을 내 강점으로 정리하고, 전역 후 다음 30일을 함께 설계해요.</p>
+        <div class="chips"><span class="pill dark" id="ns-dday">모집중</span><span class="pill yel">참가비 0원</span><span class="pill gray">전역 2년 이내</span></div>
+        <p class="eyebrow">전역했는데, 뭐부터 해야 할지 막막하다면</p>
+        <h1>군대에서 보낸 시간,<br>공백이 아니라<br>내 강점이에요.</h1>
+        <p class="desc">성향·강점 진단부터 전문가 1:1 코칭까지. 군 생활 경험을 자소서·면접에서 말할 수 있는 내 강점으로 정리해 드려요.</p>
       </div>
-      <dl>
-        <div><dt>대상</dt><dd>전역(소집해제) 후 2년 이내 청년</dd></div>
-        <div><dt>받는 것</dt><dd>성향·강점 분석 리포트 · 전문가 1:1 코칭 · 30일 실천 계획서</dd></div>
-        <div><dt>모집 기간</dt><dd>~ 2026. 11. 7.(토) 23:59</dd></div>
-        <div><dt>참가비</dt><dd>무료 (시범사업)</dd></div>
-      </dl>
+      <div class="gets">
+        <p class="gh"><span>무료로 받는 것</span><span class="price">참가비 0원</span></p>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>나만의 성향·강점 분석 리포트</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>전문가 1:1 강점 코칭</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>다음 30일 실천 로드맵 + 점검</li>
+        </ul>
+        <p class="who"><b>대상</b>전역(소집해제) 후 2년 이내 청년 · 서류 선발</p>
+      </div>
       <div class="cta">
-        <a class="btn full" href="#apply" data-apply id="ns-hero-cta">바로 신청하기 ↓</a>
-        <small id="ns-dday2"><b>11. 7.(토) 23:59</b> 마감</small>
+        <a class="btn full" href="#apply" data-apply id="ns-hero-cta">무료로 신청하기</a>
+        <small id="ns-dday2">3분이면 신청 끝 · <b>11. 7.(토) 23:59</b> 마감</small>
       </div>
     </header>
 
     <div class="rows">
+      <section class="card dark pain">
+        <svg class="spark" style="right:-18px;bottom:-18px;width:150px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
+        <h2>혹시 요즘, 이런 생각 하고 있나요?</h2>
+        <p class="cap">NEXT STEP을 마치면 이렇게 바뀌어요.</p>
+        <ul class="ba">
+          <li><span class="b">“동기들은 벌써 저만큼 가 있는 것 같아요”</span><span class="a"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>남 말고, 내 속도와 방향부터 잡아요</span></li>
+          <li><span class="b">“군대에서 한 건 자소서에 쓸 게 없어요”</span><span class="a"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>군 경험을 내 강점으로 설명할 수 있어요</span></li>
+          <li><span class="b">“뭘 좋아하고 잘하는지 모르겠어요”</span><span class="a"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>진단과 코칭으로 내가 잘하는 걸 찾아요</span></li>
+          <li><span class="b">“복학·취업 전까지 시간만 흘러가요”</span><span class="a"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>앞으로 30일, 할 일이 정해져 있어요</span></li>
+        </ul>
+      </section>
+
       <section id="perks" class="card">
         <div class="perk-hd">
-          <div class="chips"><span class="tag">참여 혜택</span><span class="pill yel">전부 무료</span></div>
-          <h2>군 생활 경험,<br>그냥 두지 말고 내 강점으로.</h2>
-          <p class="lead">성향 분석 리포트부터 전문가 1:1 코칭, 30일 실천 계획까지 받아요. <b>시범사업이라 참가비는 0원</b>이에요.</p>
+          <div class="chips"><span class="tag">무료로 받는 것</span><span class="pill yel">참가비 0원</span></div>
+          <h2>군 생활 경험을<br>‘쓸 수 있는 강점’으로 바꿔 드려요.</h2>
+          <p class="lead">진단으로 나를 알고, 코칭으로 강점을 정리하고, 30일 동안 직접 해 봐요. <b>리포트와 로드맵은 끝나도 내 것으로 남아요.</b></p>
         </div>
         <ol class="perks">
           <li>
             <div class="top-row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></span><span class="k">받는 것 01</span></div>
             <h3>나만의 성향·강점 분석 리포트</h3>
-            <p class="what">에니어그램 기반 성향 탐색에, AI가 정리한 자기이해 리포트까지 받아요.</p>
-            <p class="gain"><small>전역 후 이렇게 써요</small>자소서·면접을 준비할 때, ‘나는 이런 사람’이라고 말할 근거가 돼요.</p>
+            <p class="what">성향 진단과 AI 분석으로, 내가 어떤 상황에서 힘을 내는 사람인지 정리한 리포트를 받아요.</p>
+            <p class="gain"><small>전역 후 이렇게 써요</small>자소서·면접에서 ‘저는 이런 사람입니다’를 근거 있게 말할 수 있어요.</p>
           </li>
           <li>
             <div class="top-row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-5 4V5z"/><path d="M8.5 10h.01M12 10h.01M15.5 10h.01"/></svg></span><span class="k">받는 것 02</span></div>
             <h3>전문가 1:1 강점 코칭</h3>
-            <p class="what">리포트를 전문가와 1:1로 함께 해석하고, 지금 고민을 정리해요.</p>
-            <p class="gain"><small>전역 후 이렇게 써요</small>군에서 맡았던 역할과 경험을, 사회에서 통하는 내 강점으로 정리해요.</p>
+            <p class="what">리포트를 전문가와 1:1로 풀어 보며, 군 생활에서 맡았던 역할과 경험을 하나씩 짚어 봐요.</p>
+            <p class="gain"><small>전역 후 이렇게 써요</small>‘시키는 일만 했는데요’가 ‘저는 이런 강점이 있습니다’로 바뀌어요.</p>
           </li>
           <li>
             <div class="top-row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16M9 15l2 2 4-4"/></svg></span><span class="k">받는 것 03</span></div>
-            <h3>30일 실천 계획서 + 30일 뒤 점검</h3>
-            <p class="what">강점을 살린 실천 행동을 정해 30일 계획을 세우고, 30일 뒤 함께 점검해요.</p>
-            <p class="gain"><small>전역 후 이렇게 써요</small>복학·취업 준비 전, 막연하게 흘러가던 시간이 할 일이 정해진 30일이 돼요.</p>
+            <h3>다음 30일 실천 로드맵 + 점검</h3>
+            <p class="what">강점을 살린 행동을 정해 30일 계획을 세우고, 30일 뒤 함께 점검해요.</p>
+            <p class="gain"><small>전역 후 이렇게 써요</small>복학·취업 준비 전, 흘려보내던 시간이 할 일이 정해진 30일이 돼요.</p>
           </li>
         </ol>
       </section>
@@ -417,23 +442,25 @@ fbq('track', 'PageView');
           <p class="tag">WHY NEXT STEP</p>
           <h2>‘이제 뭘 하지?’ 전에<br>‘나는 뭘 잘하지?’부터.</h2>
           <p class="lead">전역하면 생활 리듬도, 소속도 한꺼번에 바뀌어요. 그래서 다음 할 일부터 찾게 되지만, 정작 <b>군 생활에서 내가 무엇을 잘했는지</b> 돌아볼 기회는 많지 않아요.</p>
-          <p class="lead">NEXT STEP은 <b>내 성향과 강점을 먼저 이해하고</b>, 그 강점을 살린 30일 실천으로 다음 단계를 스스로 준비하도록 돕는 프로그램이에요.</p>
+          <p class="lead">NEXT STEP은 <b>청년성장연구소</b>가 전역·휴학·복학처럼 생활이 크게 바뀌는 시기의 청년을 위해 만든 프로그램이에요. 이번 첫 기수는 참가비 없이 함께해요.</p>
         </div>
-        <div class="card dark">
-          <svg class="spark" style="right:-18px;bottom:-18px;width:150px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>
-          <h2>이런 고민, 이렇게 바뀌어요</h2>
-          <ul class="ba">
-            <li><span class="b">“전역은 했는데, 뭐부터 해야 할지 모르겠어요”</span><span class="a"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>내가 잘하는 것에서부터 시작해요</span></li>
-            <li><span class="b">“군대에서 한 건 써먹을 데가 없는 것 같아요”</span><span class="a"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>군 경험을 내 강점으로 설명할 수 있어요</span></li>
-            <li><span class="b">“복학·취업 전까지 시간만 흘러가요”</span><span class="a"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>앞으로 30일, 할 일이 정해져 있어요</span></li>
-          </ul>
+        <div class="card">
+          <h2>신청부터 이렇게 진행돼요</h2>
+          <ol class="proc">
+            <li><span class="n">1</span><div><b>온라인 신청 · 3분</b><span>~ 11. 7.(토) 23:59까지</span></div></li>
+            <li><span class="n">2</span><div><b>서류 선발</b><span>마감 후 휴대폰 문자로 결과 안내</span></div></li>
+            <li><span class="n">3</span><div><b>성향·강점 진단</b><span>사전 설문과 진단으로 나만의 리포트 받기</span></div></li>
+            <li><span class="n">4</span><div><b>전문가 1:1 코칭</b><span>리포트 해석 + 군 경험 속 강점 정리</span></div></li>
+            <li><span class="n">5</span><div><b>30일 실천 → 점검</b><span>로드맵대로 해 보고, 30일 뒤 함께 점검</span></div></li>
+          </ol>
+          <p class="remark">선발되면 진행 일정과 방법을 문자로 자세히 안내해요.</p>
         </div>
       </section>
 
       <section id="apply">
       <div class="apply-card" id="ns-card">
         <div class="ap-top" id="ns-aptop">
-          <span class="tag">군 전역 전형 · 참가 신청</span>
+          <span class="tag">무료 참가 신청 · 약 3분</span>
           <div class="stepper" id="ns-stepper" aria-label="신청 단계"><i class="on">1</i><span></span><i>2</i></div>
         </div>
         <p class="closed-msg" id="ns-closed" hidden>이번 모집은 마감됐어요. 관심 가져 주셔서 감사해요.</p>
@@ -442,7 +469,7 @@ fbq('track', 'PageView');
           <!-- STEP 1 · 지원 내용 -->
           <div data-step="1">
             <h2 class="ap-title">요즘 어떤 고민이<br>있는지 들려주세요.</h2>
-            <p class="ap-sub">정답은 없어요. 다만 선발 심사에 쓰이니, 내 이야기를 솔직하고 구체적으로 들려주세요.</p>
+            <p class="ap-sub">잘 쓰려고 하지 않아도 돼요. 지금 상황을 솔직하게 들려주시면, 그걸 보고 함께할 분을 선발해요.</p>
             <div class="pane">
               <fieldset class="q" data-q="detail">
                 <legend>전역(소집해제)한 지 얼마나 됐나요?<em class="req">*</em></legend>
@@ -471,7 +498,7 @@ fbq('track', 'PageView');
               </fieldset>
               <div class="q" data-q="worry">
                 <label class="lab" for="ns-worry">요즘 가장 큰 고민<em class="req">*</em></label>
-                <p class="hint">선발 심사는 이 답변을 중심으로 봐요. 아래 내용을 담아 구체적으로 적어 주세요.</p>
+                <p class="hint">선발은 이 답변을 가장 중요하게 봐요. 아래 내용을 담아 3~5문장이면 충분해요.</p>
                 <ul class="guide">
                   <li>지금 어떤 상황인지</li>
                   <li>무엇이 가장 고민되고, 왜 그런지</li>
@@ -502,7 +529,7 @@ fbq('track', 'PageView');
           <!-- STEP 2 · 신청자 정보 -->
           <div data-step="2" hidden>
             <h2 class="ap-title">연락받을 정보를<br>입력해 주세요.</h2>
-            <p class="ap-sub">선발 결과는 입력한 휴대폰 번호로 알려드려요.</p>
+            <p class="ap-sub">선발 결과는 이 번호로 문자로 알려드려요. 연락처는 선발과 프로그램 안내에만 써요.</p>
             <div class="pane">
               <div class="grid2">
                 <div class="q" data-q="name">
@@ -541,18 +568,6 @@ fbq('track', 'PageView');
                     <input class="field" id="ns-gu-txt" type="text" maxlength="20" placeholder="시·군·구 (예: 수원시)" aria-label="시·군·구">
                   </div>
                   <p class="err">사는 곳을 시·도와 시·군·구까지 알려 주세요.</p>
-                </div>
-                <div class="q full" data-q="source">
-                  <label class="lab" for="ns-source">어디서 보고 오셨나요?<span class="opt">선택</span></label>
-                  <select class="field" id="ns-source" name="source">
-                    <option value="">선택해 주세요</option>
-                    <option>인스타그램</option>
-                    <option>페이스북</option>
-                    <option>LOGIN 홈페이지</option>
-                    <option>친구·지인 추천</option>
-                    <option>학교·커뮤니티</option>
-                    <option>기타</option>
-                  </select>
                 </div>
               </div>
 
@@ -607,10 +622,12 @@ fbq('track', 'PageView');
       <section class="card">
         <h2>자주 묻는 질문</h2>
         <div class="faq">
-          <details><summary>선착순으로 뽑나요?</summary><p>아니요. 마감까지 받은 신청서를 모두 검토해서 선발해요.</p></details>
-          <details><summary>정말 무료인가요?</summary><p>네, 시범사업이라 참가비가 없어요. 대신 참여 전후와 30일 뒤에 짧은 설문에 참여해 주셔야 해요.</p></details>
-          <details><summary>취업을 연결해 주거나 직무를 정해 주나요?</summary><p>아니요. 성향 검사는 나를 이해하기 위한 도구예요. 직업 적성을 확정하거나, 취업을 알선하거나, 정신건강 치료를 하는 프로그램은 아니에요.</p></details>
-          <details><summary>선발 결과는 언제 알 수 있나요?</summary><p>접수가 끝난 뒤 신청서에 적은 휴대폰 번호로 한 분씩 문자로 알려드려요.</p></details>
+          <details><summary>정말 무료예요? 나중에 돈 내야 하는 건 아니죠?</summary><p>네, 참가비는 없어요. NEXT STEP 첫 기수라 참가비 없이 진행해요. 대신 참여 전후와 30일 뒤에 짧은 설문에 응답해 주세요.</p></details>
+          <details><summary>소집해제(사회복무요원)도 신청할 수 있나요?</summary><p>네. 전역 또는 소집해제 후 2년 이내라면 신청할 수 있어요.</p></details>
+          <details><summary>글을 잘 써야 뽑히나요?</summary><p>아니요. 잘 쓴 글이 아니어도 괜찮아요. 지금 상황과 고민이 구체적으로 보이면 충분해요. 선착순이 아니라 마감 후 모든 신청서를 읽고 선발해요.</p></details>
+          <details><summary>심리상담 같은 건가요?</summary><p>아니요. 치료나 상담이 아니라, 내 성향과 강점을 정리하고 다음에 할 일을 정하는 코칭이에요.</p></details>
+          <details><summary>취업을 연결해 주나요?</summary><p>취업을 알선하거나 직무를 정해 주지는 않아요. 대신 내 강점을 말로 정리해서, 자소서·면접·진로 선택에 직접 쓸 수 있게 도와요.</p></details>
+          <details><summary>결과는 언제, 어떻게 알려 주나요?</summary><p>접수가 끝난 뒤 적어 주신 휴대폰 번호로 한 분씩 문자로 알려드려요. 선발되면 진행 일정과 방법도 함께 안내해요.</p></details>
         </div>
       </section>
     </div>
@@ -620,7 +637,7 @@ fbq('track', 'PageView');
 
   <div class="sticky" id="ns-sticky" aria-hidden="true">
     <span class="when">접수 마감<b id="ns-sticky-d">11. 7.(토)</b></span>
-    <a class="btn" href="#apply" data-apply tabindex="-1">바로 신청하기 ↓</a>
+    <a class="btn" href="#apply" data-apply tabindex="-1">무료로 신청하기</a>
   </div>
   </div>
 </div>
@@ -663,7 +680,7 @@ fbq('track', 'PageView');
   /* ════════ 소개 ════════ */
   $('ns-dday').textContent = closed ? '모집마감' : '모집중 · ' + dLabel;
   if (closed) $('ns-dday2').textContent = '이번 모집은 마감됐어요. 관심 가져 주셔서 감사해요.';
-  else $('ns-dday2').innerHTML = '<b>11. 7.(토) 23:59</b> 마감 · ' + dLabel;
+  else $('ns-dday2').innerHTML = '3분이면 신청 끝 · <b>11. 7.(토) 23:59</b> 마감 · ' + dLabel;
   $('ns-sticky-d').textContent = closed ? '마감' : '11. 7.(토) · ' + dLabel;
 
   // 신청 버튼 → 아래 신청서로 이동
