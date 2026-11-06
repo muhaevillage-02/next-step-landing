@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>청년 NEXT STEP 프로젝트 참여자 모집</title>
-<meta name="description" content="군 전역·휴학·복학 청년 15명 모집. 성향·강점 분석, 전문가 1:1 강점 코칭, 30일 실천 설계를 무료로 지원해요.">
+<meta name="description" content="휴학생·복학생·군 전역·졸업생 청년을 위한 무료 성장 지원 프로그램. 성향·강점 분석, 전문가 1:1 강점 코칭, 30일 실천 설계를 참가비 없이 받을 수 있어요.">
 <meta property="og:title" content="청년 NEXT STEP 프로젝트 참여자 모집">
-<meta property="og:description" content="군 전역·휴학·복학 청년 15명 모집. 성향·강점 분석, 전문가 1:1 강점 코칭, 30일 실천 설계를 무료로 지원해요.">
-<meta property="og:image" content="https://muhaevillage-02.github.io/next-step-landing/poster.jpg">
+<meta property="og:description" content="휴학생·복학생·군 전역·졸업생 청년을 위한 무료 성장 지원 프로그램. 성향·강점 분석, 전문가 1:1 강점 코칭, 30일 실천 설계를 참가비 없이 받을 수 있어요.">
+<meta property="og:image" content="https://muhaevillage-02.github.io/next-step-landing/poster-main.jpg">
 <style>html,body{margin:0;background:#F2F3F7}</style>
 
 <!-- Meta Pixel (무해한마을 1441218827804393) -->
@@ -71,10 +71,9 @@ fbq('track', 'PageView');
 /* ── 상단: 히어로 + 요약 ── */
 .ns .top{display:grid;gap:14px}
 .ns .hero{overflow:hidden;background:#fff;border-radius:24px;display:grid;align-items:center}
-.ns .hero .pf{position:relative}
+.ns .hero .pf{position:relative;padding-bottom:14px}
 .ns .hero img{display:block;width:100%;height:auto}
 .ns .hero #ns-dday{position:absolute;top:3%;right:3%}
-.ns .hero .cta-hit{position:absolute;left:5.6%;right:5.6%;top:92.5%;height:5.2%;border-radius:999px}
 .ns .spark{position:absolute;color:var(--yellow-deep)}
 .ns .spark path{fill:currentColor}
 .ns .info .chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
@@ -87,7 +86,7 @@ fbq('track', 'PageView');
 .ns .info dd{font-weight:600;min-width:0}
 .ns .tr-h{margin-top:20px;font-size:13.5px;font-weight:800}
 .ns .tr-list{margin-top:8px;display:grid;gap:6px}
-.ns .tr-list li{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;background:var(--tile);border-radius:12px;padding:10px 14px;font-size:14px}
+.ns .tr-list li{display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:center;background:var(--tile);border-radius:12px;padding:10px 14px;font-size:14px}
 .ns .tr-list b{font-weight:700}
 .ns .tr-list span.w{color:var(--sub);font-size:13.5px}
 .ns .info .cta{margin-top:18px;display:grid;gap:10px;justify-items:center}
@@ -274,7 +273,7 @@ fbq('track', 'PageView');
   .ns .two{grid-template-columns:1.32fr 1fr}
   .ns .two.even{grid-template-columns:1fr 1fr}
   .ns .tiles{grid-template-columns:repeat(3,1fr)}
-  .ns .tracks{grid-template-columns:repeat(3,1fr)}
+  .ns .tracks{grid-template-columns:repeat(2,1fr)}
   .ns .tabs{padding:0 20px;gap:14px}
   .ns .sticky{display:none}
   .ns #ns-landing .wrap{padding-bottom:48px}
@@ -339,29 +338,29 @@ fbq('track', 'PageView');
       <div class="hero">
         <div class="pf">
           <!-- 홈페이지 빌더에 붙여 넣어도 보이도록 절대 주소 사용 -->
-          <img src="https://muhaevillage-02.github.io/next-step-landing/poster.jpg" width="1080" height="1080" fetchpriority="high"
-            alt="LOGIN lab 생애전환기 지원 프로젝트 포스터. 나를 알면, 다음 단계가 보인다. 군 전역자·휴학생·복학생 등 다음 단계가 막막한 청년을 위한 자기이해 기반 성장 설계 프로그램. 01 AI 활용 성향·강점 분석, 02 1:1 맞춤 코칭, 03 30일 실행 플랜. 모집 인원 총 15명, 전형별 5명, 시범 참여 무료.">
+          <img src="https://muhaevillage-02.github.io/next-step-landing/poster-main.jpg" width="1080" height="900" fetchpriority="high"
+            alt="LOGIN lab 생애전환기 지원 프로젝트 포스터. 나를 알면, 다음 단계가 보인다. 다음 단계가 막막한 청년을 위한 자기이해 기반 성장 설계 프로그램. 01 AI 활용 성향·강점 분석, 02 1:1 맞춤 코칭, 03 30일 실행 플랜.">
           <span class="pill dark" id="ns-dday">모집중</span>
-          <a class="cta-hit" href="#apply" data-apply aria-label="지금 신청하기"></a>
         </div>
       </div>
 
       <aside class="card info">
-        <div class="chips"><span class="pill gray">시범사업</span><span class="pill yel">참가비 무료</span><span class="hash">#군전역 #휴학생 #복학생</span></div>
+        <div class="chips"><span class="pill yel">참가비 무료</span><span class="hash">#휴학생 #복학생 #군전역 #졸업생</span></div>
         <h1>청년 NEXT STEP 프로젝트</h1>
         <p class="desc">나를 이해하고, 나만의 다음 단계를 준비해요.</p>
         <dl>
           <div><dt>모집 기간</dt><dd>상시 접수 중</dd></div>
           <div><dt>진행 구성</dt><dd>성향 분석 · 1:1 코칭 · 30일 실천</dd></div>
-          <div><dt>정원</dt><dd>총 15명 (전형별 5명)</dd></div>
-          <div><dt>대상</dt><dd>군 전역 · 휴학 · 복학 중인 청년</dd></div>
-          <div><dt>참가비</dt><dd>무료 (시범사업)</dd></div>
+          <div><dt>대상</dt><dd>휴학생 · 복학생 · 군 전역 · 졸업생</dd></div>
+          <div><dt>선발</dt><dd>총 15명 · 신청서 검토 후 선발</dd></div>
+          <div><dt>참가비</dt><dd>무료</dd></div>
         </dl>
-        <p class="tr-h">모집 전형</p>
+        <p class="tr-h">이런 분이 신청할 수 있어요</p>
         <ul class="tr-list">
-          <li><b>군 전역</b><span class="w">전역 후 2년 이내</span><span class="pill yel tstat">5명 모집</span></li>
-          <li><b>휴학생</b><span class="w">현재 대학 휴학 중</span><span class="pill yel tstat">5명 모집</span></li>
-          <li><b>복학생</b><span class="w">복학 후 첫 학기</span><span class="pill yel tstat">5명 모집</span></li>
+          <li><b>휴학생</b><span class="w">현재 대학을 휴학 중</span></li>
+          <li><b>복학생</b><span class="w">복학했거나 복학을 앞둔 중</span></li>
+          <li><b>군 전역</b><span class="w">전역(소집해제) 후 2년 이내</span></li>
+          <li><b>졸업생</b><span class="w">학교를 졸업한 뒤 다음 단계를 준비 중</span></li>
         </ul>
         <div class="cta">
           <a class="btn full" href="#apply" data-apply id="ns-hero-cta">참가 신청하기 →</a>
@@ -372,7 +371,7 @@ fbq('track', 'PageView');
 
     <nav class="tabs" aria-label="프로그램 안내">
       <a href="#about" class="on">프로그램 소개</a>
-      <a href="#tracks">모집 전형</a>
+      <a href="#tracks">신청 대상</a>
       <a href="#schedule">모집 일정</a>
       <a href="#support">지원 내용</a>
       <a href="#faq">FAQ</a>
@@ -383,9 +382,9 @@ fbq('track', 'PageView');
         <div>
           <p class="tag">WHY NEXT STEP</p>
           <h2>잠시 멈춘 시간도,<br>다음 단계를 준비하는 시간이 될 수 있어요.</h2>
-          <p class="lead">군 전역, 휴학, 복학은 생활의 리듬과 소속이 한꺼번에 바뀌는 시기예요. 이때 많은 청년이 ‘이제 뭘 해야 하지?’부터 고민하지만, 정작 <b>‘나는 어떤 사람이고, 무엇을 잘하지?’</b>를 차분히 들여다볼 기회는 많지 않아요.</p>
+          <p class="lead">휴학, 복학, 군 전역, 졸업은 생활의 리듬과 소속이 한꺼번에 바뀌는 시기예요. 이때 많은 청년이 ‘이제 뭘 해야 하지?’부터 고민하지만, 정작 <b>‘나는 어떤 사람이고, 무엇을 잘하지?’</b>를 차분히 들여다볼 기회는 많지 않아요.</p>
           <p class="lead">NEXT STEP은 생애전환기에 선 청년이 <b>내 성향과 강점을 먼저 이해하고</b>, 그 강점을 살린 작은 실천으로 <b>다음 단계를 스스로 설계하도록</b> 돕는 프로젝트예요.</p>
-          <p class="pnote">이번 시범사업에서는 15명과 함께해요. 참여자들의 이야기는 앞으로 청년 유형별 성장 지원 프로그램을 다듬는 데 쓰여요.</p>
+          <p class="pnote">NEXT STEP은 청년성장연구소가 운영해요. 이번 기수는 참가비 없이 15명과 함께해요.</p>
         </div>
         <ul class="aims">
           <li><span class="n">01</span><div><b>나를 이해하기</b><span>성향 분석으로 나를 한 걸음 떨어져서 바라봐요.</span></div></li>
@@ -398,9 +397,10 @@ fbq('track', 'PageView');
         <div class="card soft">
           <h2>이런 분을 위한 프로그램이에요</h2>
           <ul class="checks">
-            <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>전역은 했는데, 무엇부터 시작해야 할지 막막한 분</li>
             <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>휴학 기간을 의미 있게 보내고 싶은 분</li>
             <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>복학 후 달라진 학교생활에 다시 자리 잡고 싶은 분</li>
+            <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>전역은 했는데, 무엇부터 시작해야 할지 막막한 분</li>
+            <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>졸업은 했는데, 어떤 일을 하며 살지 아직 정하지 못한 분</li>
             <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#121315"/><path d="M6 10.3l2.7 2.7L14.2 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>뭘 할지 정하기 전에, 내가 뭘 잘하는지부터 알고 싶은 분</li>
           </ul>
         </div>
@@ -437,32 +437,35 @@ fbq('track', 'PageView');
       </section>
 
       <section id="tracks" class="card">
-        <h2>모집 전형</h2>
-        <p class="cap">세 가지 전형에서 5명씩, 모두 15명을 선발해요.</p>
+        <h2>신청 대상</h2>
+        <p class="cap">아래 중 하나에 해당하면 누구나 신청할 수 있어요. 전형 구분 없이, 들어온 신청서를 모두 읽고 함께할 분을 선발해요.</p>
         <div class="tracks">
           <article class="track">
             <span class="bg-no" aria-hidden="true">01</span>
-            <div class="hd"><span class="pill dark">TRACK 1</span><span class="pill yel">5명</span></div>
-            <h3>군 전역 전형</h3><p class="who">전역(소집해제) 후 2년 이내</p>
-            <dl><div><dt>탐색 질문</dt><dd>군 생활에서 나는 어떤 역할을 해왔을까?</dd></div><div><dt>코칭 초점</dt><dd>군 경험 속 강점과 사회생활에서의 활용</dd></div></dl>
-            <a class="go" href="#apply" data-apply="discharge">이 전형으로 신청 →</a>
+            <h3>휴학생</h3><p class="who">현재 대학을 휴학 중</p>
+            <dl><div><dt>탐색 질문</dt><dd>휴학 기간, 나는 무엇을 원하고 있을까?</dd></div><div><dt>코칭 초점</dt><dd>관심사·성향·강점 정리와 작은 도전</dd></div></dl>
+            <a class="go" href="#apply" data-apply="leave">신청하기 →</a>
           </article>
           <article class="track">
             <span class="bg-no" aria-hidden="true">02</span>
-            <div class="hd"><span class="pill dark">TRACK 2</span><span class="pill yel">5명</span></div>
-            <h3>휴학생 전형</h3><p class="who">현재 대학을 휴학 중</p>
-            <dl><div><dt>탐색 질문</dt><dd>휴학 기간, 나는 무엇을 원하고 있을까?</dd></div><div><dt>코칭 초점</dt><dd>관심사·성향·강점 정리와 작은 도전</dd></div></dl>
-            <a class="go" href="#apply" data-apply="leave">이 전형으로 신청 →</a>
+            <h3>복학생</h3><p class="who">복학했거나 복학을 앞둔 중</p>
+            <dl><div><dt>탐색 질문</dt><dd>복학하고 나서 무엇이 달라졌을까?</dd></div><div><dt>코칭 초점</dt><dd>새 생활환경에서의 강점 활용과 습관</dd></div></dl>
+            <a class="go" href="#apply" data-apply="return">신청하기 →</a>
           </article>
           <article class="track">
             <span class="bg-no" aria-hidden="true">03</span>
-            <div class="hd"><span class="pill dark">TRACK 3</span><span class="pill yel">5명</span></div>
-            <h3>복학생 전형</h3><p class="who">복학 후 첫 학기를 보내는 중</p>
-            <dl><div><dt>탐색 질문</dt><dd>복학하고 나서 무엇이 달라졌을까?</dd></div><div><dt>코칭 초점</dt><dd>새 생활환경에서의 강점 활용과 습관</dd></div></dl>
-            <a class="go" href="#apply" data-apply="return">이 전형으로 신청 →</a>
+            <h3>군 전역</h3><p class="who">전역(소집해제) 후 2년 이내</p>
+            <dl><div><dt>탐색 질문</dt><dd>군 생활에서 나는 어떤 역할을 해왔을까?</dd></div><div><dt>코칭 초점</dt><dd>군 경험 속 강점과 사회생활에서의 활용</dd></div></dl>
+            <a class="go" href="#apply" data-apply="discharge">신청하기 →</a>
+          </article>
+          <article class="track">
+            <span class="bg-no" aria-hidden="true">04</span>
+            <h3>졸업생</h3><p class="who">학교를 졸업한 뒤 다음 단계를 준비 중</p>
+            <dl><div><dt>탐색 질문</dt><dd>졸업 후, 나는 어떤 일을 하며 살고 싶을까?</dd></div><div><dt>코칭 초점</dt><dd>강점에 맞는 진로 방향과 첫 실천</dd></div></dl>
+            <a class="go" href="#apply" data-apply="graduate">신청하기 →</a>
           </article>
         </div>
-        <p class="remark">여러 전형에 해당하면, 지금 가장 고민이 큰 상황 하나로 신청해 주세요.</p>
+        <p class="remark">여러 상황에 해당하면, 지금 가장 고민이 큰 상황 하나를 골라 신청해 주세요.</p>
       </section>
 
       <section id="schedule" class="card">
@@ -477,14 +480,14 @@ fbq('track', 'PageView');
           <li class="fa" aria-hidden="true"><svg width="14" height="22" viewBox="0 0 14 22"><path d="M3 3l8 8-8 8" fill="none" stroke="#121315" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
           <li class="fs"><span class="fc"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28V5"/><path d="M8 6h16l-3.5 5L24 16H8"/></svg></span><b>프로그램 진행</b><span class="fd">선발 후 시작</span></li>
         </ol>
-        <p class="flow-note"><b>서류 심사 기준</b> 전형 자격 · 고민 내용 · 참여 동기 · 일정 참여 가능 여부 · 참여자 구성 <span>(선착순 아님)</span></p>
+        <p class="flow-note"><b>서류 심사 기준</b> 신청 자격 · 고민 내용 · 참여 동기 · 일정 참여 가능 여부 · 참여자 구성 <span>(선착순 아님)</span></p>
       </section>
 
       <section id="support" class="two even">
         <div class="card soft">
           <h2>참가자 지원 내용</h2>
           <ul class="support">
-            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg></span><div><b>참가비 무료</b><span>시범사업으로 운영돼 참가비가 없어요.</span></div></li>
+            <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg></span><div><b>참가비 무료</b><span>이번 기수는 참가비 없이 모든 과정을 받을 수 있어요.</span></div></li>
             <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></span><div><b>개인 분석 리포트</b><span>에니어그램 기반 성향 탐색과 AI 활용 자기이해 리포트를 드려요.</span></div></li>
             <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-5 4V5z"/></svg></span><div><b>1:1 전문가 코칭</b><span>리포트를 바탕으로 강점과 성장 과제를 함께 정리해요.</span></div></li>
             <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span><div><b>30일 실천 점검</b><span>계획을 실천해 보고, 30일 뒤 달라진 점을 함께 살펴봐요.</span></div></li>
@@ -495,9 +498,10 @@ fbq('track', 'PageView');
           <h2>이런 질문을 함께 다뤄요</h2>
           <ul class="stars">
             <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>나는 어떤 상황에서 강점을 발휘할까?</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>군 생활에서 나는 어떤 역할을 해왔을까?</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>휴학 기간, 나는 무엇을 원하고 있을까?</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>복학 후, 무엇이 달라졌을까?</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>군 생활에서 나는 어떤 역할을 해왔을까?</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>졸업 후, 어떤 일을 하며 살고 싶을까?</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F8F25A" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg>앞으로 30일, 무엇부터 해 볼까?</li>
           </ul>
         </div>
@@ -506,9 +510,9 @@ fbq('track', 'PageView');
       <section id="faq" class="card">
         <h2>자주 묻는 질문</h2>
         <div class="faq">
-          <details><summary>선착순으로 뽑나요?</summary><p>아니요. 들어온 신청서를 모두 읽고 전형별로 5명씩 선발해요.</p></details>
-          <details><summary>여러 전형에 해당하면 어떻게 하나요?</summary><p>지금 가장 고민이 큰 상황 하나를 골라 그 전형으로 신청해 주세요.</p></details>
-          <details><summary>정말 무료인가요?</summary><p>네, 시범사업이라 참가비가 없어요. 대신 참여 전후와 30일 뒤에 짧은 설문에 참여해 주셔야 해요.</p></details>
+          <details><summary>선착순으로 뽑나요?</summary><p>아니요. 들어온 신청서를 모두 읽고 함께할 분을 선발해요.</p></details>
+          <details><summary>휴학생이면서 군 전역자처럼, 여러 상황에 해당하면요?</summary><p>지금 가장 고민이 큰 상황 하나를 골라 신청해 주세요. 어느 쪽을 골라도 선발에는 차이가 없어요.</p></details>
+          <details><summary>정말 무료인가요?</summary><p>네, 이번 기수는 참가비가 없어요. 대신 참여 전후와 30일 뒤에 짧은 설문에 참여해 주셔야 해요.</p></details>
           <details><summary>취업을 연결해 주거나 직무를 정해 주나요?</summary><p>아니요. 성향 검사는 나를 이해하기 위한 도구예요. 직업 적성을 확정하거나, 취업을 알선하거나, 정신건강 치료를 하는 프로그램은 아니에요.</p></details>
           <details><summary>선발 결과는 언제 알 수 있나요?</summary><p>신청서를 검토한 뒤 신청서에 적은 휴대폰 번호로 한 분씩 문자로 알려드려요.</p></details>
         </div>
@@ -538,22 +542,24 @@ fbq('track', 'PageView');
         </div>
 
         <form id="ns-form" novalidate>
-          <!-- STEP 1 · 지원 전형 -->
+          <!-- STEP 1 · 지금 상황 -->
           <div data-step="1">
-            <h1 class="ap-title">지원할 전형을<br>선택해 주세요.</h1>
+            <h1 class="ap-title">지금 나의 상황을<br>골라 주세요.</h1>
             <p class="ap-sub">여러 개에 해당하면 지금 가장 고민이 큰 상황 하나만 골라 주세요.</p>
             <div class="pane">
               <fieldset class="q" data-q="track">
-                <legend class="sr">지원 전형</legend>
+                <legend class="sr">지금 상황</legend>
                 <div class="tpick">
-                  <label class="tcard"><input type="radio" name="track" value="군 전역" data-key="discharge">
-                    <span><b>군 전역 전형</b><span class="s">전역(소집해제) 후 2년 이내</span></span><span class="mk" aria-hidden="true"></span></label>
                   <label class="tcard"><input type="radio" name="track" value="휴학생" data-key="leave">
-                    <span><b>휴학생 전형</b><span class="s">현재 대학을 휴학 중</span></span><span class="mk" aria-hidden="true"></span></label>
+                    <span><b>휴학생</b><span class="s">현재 대학을 휴학 중</span></span><span class="mk" aria-hidden="true"></span></label>
                   <label class="tcard"><input type="radio" name="track" value="복학생" data-key="return">
-                    <span><b>복학생 전형</b><span class="s">복학 후 첫 학기를 보내는 중</span></span><span class="mk" aria-hidden="true"></span></label>
+                    <span><b>복학생</b><span class="s">복학했거나 복학을 앞둔 중</span></span><span class="mk" aria-hidden="true"></span></label>
+                  <label class="tcard"><input type="radio" name="track" value="군 전역" data-key="discharge">
+                    <span><b>군 전역</b><span class="s">전역(소집해제) 후 2년 이내</span></span><span class="mk" aria-hidden="true"></span></label>
+                  <label class="tcard"><input type="radio" name="track" value="졸업생" data-key="graduate">
+                    <span><b>졸업생</b><span class="s">학교를 졸업한 뒤 다음 단계를 준비 중</span></span><span class="mk" aria-hidden="true"></span></label>
                 </div>
-                <p class="err">지원할 전형을 골라 주세요.</p>
+                <p class="err">지금 상황을 하나 골라 주세요.</p>
               </fieldset>
 
               <fieldset class="q" data-q="detail" id="ns-detail" hidden>
@@ -575,6 +581,12 @@ fbq('track', 'PageView');
                   <label class="chip"><input type="radio" name="detail" value="이번 학기 복학(첫 학기)"><span>이번 학기 복학</span></label>
                   <label class="chip"><input type="radio" name="detail" value="다음 학기 복학 예정"><span>다음 학기 복학 예정</span></label>
                   <label class="chip"><input type="radio" name="detail" value="복학 후 2학기 이상"><span>복학한 지 2학기 이상</span></label>
+                </div>
+                <div class="chips2" data-for="graduate">
+                  <label class="chip"><input type="radio" name="detail" value="졸업 6개월 이내"><span>6개월 이내</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="졸업 6개월~1년"><span>6개월~1년</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="졸업 1~2년"><span>1~2년</span></label>
+                  <label class="chip"><input type="radio" name="detail" value="졸업 2년 이상"><span>2년 이상</span></label>
                 </div>
                 <p class="err">하나를 골라 주세요.</p>
               </fieldset>
@@ -691,14 +703,14 @@ fbq('track', 'PageView');
                 <div class="agree">
                   <div class="agree-row"><label><input type="checkbox" class="ck" id="ns-consent" name="consent" value="동의"><span>[필수] 개인정보 수집 및 이용 동의</span></label><button type="button" class="see" data-see="ns-t1" aria-expanded="false">보기</button></div>
                   <dl class="terms" id="ns-t1" hidden>
-                    <dt>수집 항목</dt><dd>이름, 출생연도, 휴대폰 번호, 사는 곳(시·도, 시·군·구), 지원 전형과 관련 상황, 현재 상황, 고민 내용, 얻고 싶은 것, 하고 싶은 말(선택)</dd>
+                    <dt>수집 항목</dt><dd>이름, 출생연도, 휴대폰 번호, 사는 곳(시·도, 시·군·구), 신청 구분(휴학·복학·군 전역·졸업)과 관련 상황, 현재 상황, 고민 내용, 얻고 싶은 것, 하고 싶은 말(선택)</dd>
                     <dt>수집 목적</dt><dd>참가자 선발, 결과 안내, 프로그램 운영 연락</dd>
                     <dt>보유 기간</dt><dd>프로그램 종료 후 6개월 이내 파기</dd>
                     <dt>거부 권리</dt><dd>동의를 거부할 수 있지만, 거부하면 신청할 수 없어요.</dd>
                   </dl>
                   <div class="agree-row"><label><input type="checkbox" class="ck" id="ns-research" name="research" value="동의"><span class="em">[선택] 응답 내용의 익명 연구 활용 동의</span></label><button type="button" class="see" data-see="ns-t2" aria-expanded="false">보기</button></div>
                   <dl class="terms" id="ns-t2" hidden>
-                    <dt>활용 항목</dt><dd>지원 전형과 관련 상황, 현재 상황, 출생연도, 사는 곳(시·도, 시·군·구), 고민 내용, 얻고 싶은 것 (이름·연락처 제외)</dd>
+                    <dt>활용 항목</dt><dd>신청 구분(휴학·복학·군 전역·졸업)과 관련 상황, 현재 상황, 출생연도, 사는 곳(시·도, 시·군·구), 고민 내용, 얻고 싶은 것 (이름·연락처 제외)</dd>
                     <dt>활용 목적</dt><dd>청년 유형별 성장지원 수요 조사와 프로그램 개선</dd>
                     <dt>활용 방식</dt><dd>개인을 알아볼 수 없는 익명·통계 형태로만 활용</dd>
                     <dt>보유 기간</dt><dd>결과 보고서 작성 후 파기</dd>
@@ -723,9 +735,9 @@ fbq('track', 'PageView');
           <div class="confetti" id="ns-confetti" aria-hidden="true"></div>
           <span class="burst" aria-hidden="true"><svg width="44" height="44" viewBox="0 0 24 24"><path fill="#121315" d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z"/></svg></span>
           <h1 id="ns-done-title">신청이 접수됐어요!</h1>
-          <p id="ns-done-text">이제 편하게 기다려 주세요.<br>접수가 끝나면 선발 결과를 문자로 알려드려요.</p>
+          <p id="ns-done-text">이제 편하게 기다려 주세요.<br>신청서를 검토한 뒤 선발 결과를 문자로 알려드려요.</p>
           <dl id="ns-done-info" hidden>
-            <div><dt>지원 전형</dt><dd id="ns-done-track"></dd></div>
+            <div><dt>신청 구분</dt><dd id="ns-done-track"></dd></div>
             <div><dt>신청자</dt><dd id="ns-done-name"></dd></div>
             <div><dt>접수 일시</dt><dd id="ns-done-time"></dd></div>
           </dl>
@@ -773,7 +785,6 @@ fbq('track', 'PageView');
   $('ns-list').href = CONFIG.LIST_URL;
   if (closed) {
     $('ns-dday').textContent = $('ns-dday-a').textContent = '모집마감';
-    document.querySelectorAll('#ns-root .tstat').forEach(function (s) { s.textContent = '마감'; s.className = 'pill off tstat'; });
     $('ns-dday2').textContent = '이번 모집은 마감됐어요. 관심 가져 주셔서 감사해요.';
     var fd = $('ns-flow-d'); fd.textContent = '접수 마감'; fd.closest('.fs').classList.remove('now');
   }
@@ -859,7 +870,8 @@ fbq('track', 'PageView');
   var DETAIL = {
     discharge: { title: '전역(소집해제)한 지 얼마나 됐나요?', ph: '예: 전역한 지 두 달째인데, 복학까지 남은 시간을 어떻게 써야 할지 모르겠어요. 군에서는 맡은 일을 꼼꼼히 챙긴다는 말을 자주 들었는데, 그게 제 강점인지, 앞으로 어디에 살릴 수 있을지 알고 싶어요.' },
     leave: { title: '휴학한 지 얼마나 됐나요?', ph: '예: 휴학한 지 반년이 지났는데 계획과 달리 시간만 흘러가는 것 같아요. 하고 싶은 건 많은데 무엇부터 해야 할지 정하지 못하고 있어서, 나에게 맞는 방향을 찾고 싶어요.' },
-    'return': { title: '언제 복학했나요?', ph: '예: 복학했는데 예전처럼 수업과 사람들에 적응하기가 쉽지 않아요. 동기들은 다 앞서가는 것 같아 조급한데, 제가 잘할 수 있는 것부터 차근차근 다시 잡아 보고 싶어요.' }
+    'return': { title: '언제 복학했나요?', ph: '예: 복학했는데 예전처럼 수업과 사람들에 적응하기가 쉽지 않아요. 동기들은 다 앞서가는 것 같아 조급한데, 제가 잘할 수 있는 것부터 차근차근 다시 잡아 보고 싶어요.' },
+    graduate: { title: '졸업한 지 얼마나 됐나요?', ph: '예: 졸업한 지 반년이 지났는데 어떤 일을 해야 할지 아직 정하지 못했어요. 주변은 하나둘 자리를 잡는데 저만 멈춰 있는 것 같아 조급해요. 제가 잘하는 게 뭔지부터 알고, 거기서 방향을 잡아 보고 싶어요.' }
   };
   var tracks = form.querySelectorAll('input[name="track"]');
   function setTrack(key) {
@@ -1018,7 +1030,7 @@ fbq('track', 'PageView');
     if (data) {
       var t = new Date(Date.now() + 9 * 3600e3);
       var pad = function (n) { return (n < 10 ? '0' : '') + n; };
-      $('ns-done-track').textContent = data.track + ' 전형';
+      $('ns-done-track').textContent = data.track;
       $('ns-done-name').textContent = data.name;
       $('ns-done-time').textContent = t.getUTCFullYear() + '. ' + (t.getUTCMonth() + 1) + '. ' + t.getUTCDate() + '. ' + pad(t.getUTCHours()) + ':' + pad(t.getUTCMinutes());
       $('ns-done-info').hidden = false;
@@ -1034,7 +1046,7 @@ fbq('track', 'PageView');
     window.scrollTo(0, 0);
   }
 
-  // 주소에 ?track= 이 있으면 그 전형을 미리 골라 둬요 (전형별 광고용)
+  // 주소에 ?track=leave|return|discharge|graduate 가 있으면 그 상황을 미리 골라 둬요 (대상별 광고용)
   var pre = params && params.get('track');
   if (pre) preselect(pre);
   show(1, false);
